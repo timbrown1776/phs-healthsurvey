@@ -14,7 +14,7 @@ import constants
 # heart = 'https://team134chd.s3.amazonaws.com/heart.jpg'
 
 # data_path = 'https://team134chd.s3.amazonaws.com/CHDPositiveData.csv'
-model_path = './model/team134_top10.sav'
+model_path = 'model/team134_top10.sav'
 # heart = 'https://team134chd.s3.amazonaws.com/heart.jpg'
 #https://phs-chd.s3.amazonaws.com/CHDPositiveData.csv
 #s3://phs-chd/CHD_model.sav    
