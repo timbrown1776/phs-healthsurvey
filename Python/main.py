@@ -16,7 +16,7 @@ import constants
 # data_path = 'https://team134chd.s3.amazonaws.com/CHDPositiveData.csv'
 import os
 from pathlib import Path
-model_path = Path(__file__).parents[0] / 'team134_top10.sav'
+model_path = Path(__file__).parents[0] / 'model/team134_top10.sav'
 
 # model_path = 'model/team134_top10.sav'
 # heart = 'https://team134chd.s3.amazonaws.com/heart.jpg'
