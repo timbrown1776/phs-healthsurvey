@@ -1,0 +1,1 @@
+COPY healthsurvey_var to 'C:\_Projects\HealthSurvey\Code\PostgreSQLDatabase\Data\DataDictionary.csv' csv header;

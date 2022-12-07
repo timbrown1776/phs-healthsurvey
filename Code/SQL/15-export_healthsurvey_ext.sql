@@ -1,0 +1,1 @@
+COPY healthsurvey_ext to 'C:\_Projects\HealthSurvey\Code\PostgreSQLDatabase\Data\healthsurvey_ext.csv' csv header;
