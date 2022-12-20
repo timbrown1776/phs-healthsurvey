@@ -1,0 +1,12 @@
+pandas
+scikit-learn
+seaborn
+streamlit
+pickle5
+psycopg2
+sqlalchemy
+pathlib
+os
+constants_chd
+pickle
+random
