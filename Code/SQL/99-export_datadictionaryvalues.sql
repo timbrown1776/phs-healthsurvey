@@ -1,0 +1,1 @@
+COPY healthsurvey_var_values to 'C:\_GitHub\phs-healthsurvey\Code\SQL\Data\DataDictionaryValues.csv' csv header;

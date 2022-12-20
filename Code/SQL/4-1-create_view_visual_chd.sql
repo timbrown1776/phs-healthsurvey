@@ -1,0 +1,44 @@
+drop view if exists visual_chd;
+
+create view visual_chd as
+select 
+_age80 as dem_age_na_cont,
+_sex as dem_gender_na_cat,
+_imprace as dem_race_na_cat,
+_state as dem_state_na_cat,
+_bmi5cat as gh_bmi_na_cat,
+_rfhlth as gh_status_na_cat,
+hc_arthritis__drdxar3_cat as hc_arthritis_hascondition_bin,
+hc_asthma__casthm1_bin as hc_asthma_hascondition_bin,
+hc_cancer_chcocncr_bin as hc_cancer_hascondition_bin,
+hc_chd__michd_cat as hc_chd__michd_cat,
+hc_cognitive_cdassist_cat as hc_cognitive_hascondition_bin,
+hc_cvd__rfhype6_bin as hc_cvd_hascondition_bin,
+hc_diabetes_diabete4_cat as hc_diabetes_hascondition_bin,
+hc_hearing_deaf_bin as hc_hearing_hascondition_bin,
+hc_hepatitis_toldhepc_bin as hc_hepatitis_hascondition_bin,
+hc_kidney_chckdny2_bin as hc_kidney_hascondition_bin,
+hc_mental_decide_bin as hc_mental_hascondition_bin,
+hc_mobility_diffwalk_bin as hc_mobility_hascondition_bin,
+hc_respitory_chccopd3_bin as hc_respitory_hascondition_bin,
+hc_alcohol_arthexer_bin as hc_treat_exercise_bin,
+hc_vision_blind_bin as hc_vision_hascondition_bin,
+frenchf1 as nut_fried_howoften_cont,
+fruit2 as nut_fruit_howmany_cont,
+fvgreen1 as nut_vegetables_howmany_cont,
+sh_alcohol__rfdrhv7_bin as sh_alcohol_heavy_bin,
+sh_smoking_smoke100_bin as sh_cigarettes_100perlife_bin,
+sh_smoking__rfsmok3_bin as sh_smoking_current_bin,
+educa as ss_education_level_cat,
+employ1 as ss_employment_na_cat,
+_hcvu652 as ss_healthinsurance_na_cat,
+income3 as ss_income_na_cat,
+ss_veteran_veteran3_bin as ss_veteran_na_bin,
+vac_flu_flushot7_bin as vac_flu_na_bin,
+vac_hpv_hpvadvc4_bin as vac_hpv_na_bin,
+vac_bmi__pneumo3_bin as vac_pneumonia_65plus_bin,
+vac_pneumonia_pneuvac4_bin as vac_pneumonia_everhadshot_bin
+from healthsurvey_cat h
+join healthsurvey_label hl on h.id = hl.id;
+
+select * from visual_chd;

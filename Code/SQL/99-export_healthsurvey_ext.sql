@@ -1,0 +1,1 @@
+COPY healthsurvey_ext to 'C:\_GitHub\phs-healthsurvey\Code\SQL\Data\healthsurvey_ext.csv' csv header;

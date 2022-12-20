@@ -1,0 +1,1 @@
+COPY datadictionary to 'C:\_GitHub\phs-healthsurvey\Code\SQL\Data\DataDictionary.csv' csv header;

@@ -1,0 +1,1 @@
+COPY (select * from visual_chd) to 'C:\_GitHub\phs-healthsurvey\Code\Tableau\Data\visual_chd.csv' csv header;

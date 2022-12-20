@@ -1,324 +1,310 @@
-var,num_responses,keep,category,subcategory1,subcategory2,analysis,analyzed_by,var_type,is_positive_response,hs_ext_column_name,survey_question
-ff,6,n,Demographics,age,,category,Ignore,Sandeep,Categorical,,Six-level imputed age category
-_AGE65YR,3,n,Demographics,age,,category,Ignore,Monika,Categorical,,Two-level age category
-_AGE80,63,y,Demographics,age,age,na,Ignore,Sandeep,cont,dem_age_na_cont,Imputed Age value collapsed above 80
-_AGEG5YR,14,n,Demographics,age,bmi,test,VVIP,Sandeep,Categorical,,Fourteen-level age category
-_AIDTST4,4,y,Health Condition,hiv,hiv,tested,VVIP,Mousom,bin,hc_hiv_tested_bin,Adults who have ever been tested for HIV
-_ASTHMS1,4,y,Health Condition,asthma,asthma,na,Ignore,Tim,cat,hc_asthma_na_cat,Computed asthma status
-_BMI5,3888,y,General Health,bmi,bmi,na,VVIP,Sandeep,cont,gh_bmi_na_cont,Body Mass Index (BMI)
-_BMI5CAT,5,y,General Health,bmi,bmi,na,Think about this,Sandeep,cat,gh_bmi_na_cat,Four-categories of Body Mass Index (BMI)
-_CASTHM1,3,y,Health Condition,asthma,asthma,test,Ignore,Tim,bin,hc_asthma_test_bin,Adults who have been told they currently have asthma
-_CHISPNC,4,n,Demographics,Race,weight,type,Ignore?,Sandeep,Categorical,,"Child Hispanic, Latino/a, or Spanish origin calculated variable"
-_CHLDCNT,7,n,Demographics,children,cvd,condition,Ignore,Mousom,Categorical,,Number of children in household
-_CHOLCH3,4,y,Health Condition,cvd,test,cholesterol,Ignore,Mousom,cat,hc_test_cholesterol_cat,Cholesterol check within past five years
-_CLLCPWT,19512,n,Phone,Phone,vegetables,na,Ignore,Sandeep,Categorical,,Final child weight: Land-line and Cell-Phone data (Raking derived weight)
-_CPRACE1,10,n,Child Demographics,Race,safe,na,Ignore,Nalini,Categorical,,Preferred Child Race Categories
-_CRACE1,10,n,Phone,Phone,drugs,na,Ignore,Nalini,Categorical,,Child multiracial race categorization
-_CURECI1,3,y,Social Habits,Smoking,smoking,ecigs,VVIP,Nalini,cat,sh_smoking_ecigs_cat,Adults who are current e-cigarette users
-_DRDXAR3,3,y,Health Condition,arthritis,arthritis,diagnosed,VVIP,Nalini,cat,hc_arthritis_diagnosed_cat,Respondents who have had a doctor diagnose them as having some form of arthritis
-_DRNKWK1,285,y,Social Habits,Alcohol,alcohol,perweek,VVIP,Nalini,cont,sh_alcohol_perweek_cont,Calculated total number of alcoholic beverages consumed per week
-_DUALCOR,107,n,Phone,Phone,asthma,impact,ignore,Monika,Categorical,,Dual phone use correction factor
-_DUALUSE,3,n,Phone,Phone,cognitive,impact,Think about this,Nalini,Categorical,,Dual Phone Use Categories
-_EDUCAG,5,y,Social Status,Education,education,level,Ignore,Monika,cat,ss_education_level_cat,Level of education completed
-_FLSHOT7,4,n,Vaccine,flu,cognitive,condition,,Tim,Binary,,Adults aged 65+ who have had a flu shot within the past year
-_FRT16A,2,y,Nutrition,Fruits,fruits,gt16perday,VVIP,Sandeep,cat,nut_fruits_gt16perday_cat,Reported consuming Fruit >16 per day
-_FRTLT1A,3,y,Nutrition,Fruits,fruits,1ormoreperday,VVIP,Mousom,cat,nut_fruits_1ormoreperday_cat,Consume Fruit 1 or more times per day
-_FRTRES1,2,n,Nutrition,Fruits,diabetes,treatment,Ignore,Sandeep,Categorical,,Missing any fruit responses
-_FRUITE1,3,n,Nutrition,Fruits,cancer,na,Ignore,Mousom,Categorical,,Question: Fruit Exclusion from analyses
-_FRUTSU1,729,y,Nutrition,Fruits,fruits,totalperday,VVIP,Monika,cont,nut_fruits_totalperday_cont,Total fruits consumed per day
-_HCVU652,3,y,Social Status,Health Insurance,healthinsurance,na,Ignore,Sandeep,cat,ss_healthinsurance_na_cat,Respondents aged 18-64 who have any form of health insurance
-_HISPANC,3,n,Demographics,Race,generalcare,na,Ignore,Mousom,Categorical,,"Hispanic, Latino/a, or Spanish origin calculated variable"
-_HLTHPLN,3,n,Social Status,Health Insurance,generalcare,condition,Ignore,Mousom,Binary,,Adults who had some form of health insurance
-_IMPRACE,6,y,Demographics,Race,race,na,Ignore,Monika,cat,dem_race_na_cat,Computed race groups used for internet prevalence tables
-_INCOMG1,8,n,Social Status,Income,condition,na,Think about this,Nalini,Categorical,,Income categories
-_LLCPWT,258033,n,Phone,Phone,relationship,na,ignore,Monika,,,Truncated design weight used in adult combined land line and cell phone raking 
-_LLCPWT2,14331,n,Phone,Phone,cancer,na,ignore,Monika,,,Truncated design weight used in adult combined land line and cell phone raking 
-_LMTACT3,5,y,Health Condition,arthritis,arthritis,activitylimit,VVIP,Nalini,cat,hc_arthritis_activitylimit_cat,Limited usual activities
-_LMTWRK3,5,y,Health Condition,arthritis,arthritis,worklimit,VVIP,Nalini,cat,hc_arthritis_worklimit_cat,Limited work activities
-_LTASTH1,3,y,Health Condition,asthma,asthma,told,ignore,Tim,bin,hc_asthma_told_bin,Adults who have ever been told they have asthma
-_MENT14D,4,y,Health Condition,Mental,mental,statuslast30days,Ignore,Mousom,cat,hc_mental_statuslast30days_cat,"3 level not good mental health status: 0 days, 1-13 days, 14-30 days"
-_METSTAT,3,n,Demographics,Geographic,diabetes,na,VVIP,Monika,Categorical,,Metropolitan Status
-_MICHD,3,y,Health Condition,chd,chd,reportedhaving,,Tim,cat,hc_chd_reportedhaving_cat,Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI)
-_MISFRT1,3,n,Nutrition,Fruits,diabetes,na,Ignore,Nalini,Categorical,,The number of missing fruit responses
-_MISVEG1,5,n,Nutrition,Vegetables,diabetes,na,Think about this,Nalini,Categorical,,The number of missing vegetable responses
-_MRACE1,10,n,Demographics,Race,mobility,na,Ignore,Mousom,Categorical,,Race/ethnicity categories
-IDAY,31,n,Key,Key,,Key,,,Continuous,,
-_PHYS14D,4,y,General Health,Status,status,physical,VVIP,Nalini,cat,gh_status_physical_cat,"3 level not good physical health status: 0 days, 1-13 days, 14-30 days"
-_PNEUMO3,4,y,Vaccine,pneumonia,pneumonia,65plus,,Tim,bin,vac_pneumonia_65plus_bin,Adults aged 65+ who have ever had a pneumonia vaccination
-_PRACE1,11,n,Demographics,Race,cvd,na,Ignore,Mousom,Categorical,,Preferred race category
-_PSU,39095,n,Key,Key,alcohol,na,Ignore,Monika,Continuous,,Primary Sampling Unit (Equal to Annual Sequence Number) 
-_RACE,9,n,Demographics,Race,alcohol,na,VVIP,Mousom,Categorical,,Race/ethnicity categories
-_RACEG21,3,n,Demographics,Race,alcohol,na,Ignore,Tim,Categorical,,White non-Hispanic race group
-_RACEGR3,6,n,Demographics,Race,smoking,na,Ignore,Mousom,Categorical,,Five-level race/ethnicity category
-_RACEPRV,8,n,Demographics,Race,education,na,Ignore,Monika,Categorical,,Computed race groups used for internet prevalence tables
-_RAWRAKE,12,n,Phone,Phone,vision,condition,Ignore,Sandeep,Categorical,,"Raw weighting factor used in raking (Number of adults in the household (NUMADULT, maximum of 5) divided by the imputed number of phones (_IMPNPH, maximum of 3).)"
-_RFBING5,3,y,Social Habits,Alcohol,alcohol,binge,VVIP,Nalini,bin,sh_alcohol_binge_bin,"Binge drinkers (males having five or more drinks on one occasion, females having four or more drinks on one occasion)"
-_RFBMI5,3,y,General Health,Weight,weight,na,VVIP,Nalini,bin,gh_weight_na_bin,Adults who have a body mass index greater than 25.00 (Overweight or Obese)
-_RFCHOL3,4,y,Health Condition,cvd,cvd,testhighcholesterol,VVIP,Nalini,bin,hc_cvd_testhighcholesterol_bin,"Adults who have had their cholesterol checked and have been told by a doctor, nurse, or other health professional that it was high"
-_RFDRHV7,3,y,Social Habits,Alcohol,alcohol,heavy,VVIP,Nalini,bin,sh_alcohol_heavy_bin,Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week)
-_RFHLTH,3,n,General Health,Status,fruits,condition,VVIP,Nalini,Categorical,,Adults with good or better health
-_RFHYPE6,3,y,Health Condition,cvd,cvd,condition,,Tim,bin,hc_cvd_condition_bin,"Adults who have been told they have high blood pressure by a doctor, nurse, or other health professional"
-_RFSMOK3,3,y,Social Habits,Smoking,smoking,current,VVIP,Nalini,bin,sh_smoking_current_bin,Adults who are current smokers
-_SEX,2,y,Demographics,gender,gender,na,Ignore,Nalini,cat,dem_gender_na_cat,Calculated sex variable
-_SMOKER3,5,y,Social Habits,Smoking,smoking,status,VVIP,Nalini,cat,sh_smoking_status_cat,"Four-level smoker status: Everyday smoker, Someday smoker, Former smoker, Non-smoker"
-_STATE,53,y,Demographics,State,state,na,VVIP,Monika,cat,dem_state_na_cat,State FIPS Code
-_STRWT,1575,n,Phone,Phone,cancer,condition,Ignore,Sandeep,Categorical,,Stratum weight (Number of records in a stratum (NRECSTR) divided by the number of records selected (NRECSEL).)
-_STSTR,2140,n,Key,Key,cancer,treatment,Ignore,Monika,Continuous,,"Sample Design Stratification Variable (Prior to 2011: _STSTR is a five digit number that combines the values for _STATE (first two characters), _GEOSTR (third and fourth character), and _DENSTR2 (final character).)"
-_TOTINDA,3,n,General Health,Excercise,hepatitis,na,ignore,Mousom,Binary,,Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
-_URBSTAT,3,y,Demographics,Geographic,geographic,urbanrural,VVIP,Monika,cat,dem_geographic_urbanrural_cat,Urban/Rural Status
-_VEG23A,2,y,Nutrition,Vegetables,vegetables,gt23,VVIP,Monika,cat,nut_vegetables_gt23_cat,Reported consuming Vegetables >23 per day
-_VEGESU1,2362,y,Nutrition,Vegetables,vegetables,na,VVIP,Sandeep,cont,nut_vegetables_na_cont,Total vegetables consumed per day
-_VEGETE1,3,n,Nutrition,Vegetables,cvd,impact,ignore,Mousom,Categorical,,Vegetable Exclusion from analyses
-_VEGLT1A,3,y,Nutrition,Vegetables,vegetables,1ormoreperday,VVIP,Mousom,cat,nut_vegetables_1ormoreperday_cat,Consume Vegetables 1 or more times per day
-_VEGRES1,2,n,Nutrition,Vegetables,diabetes,impact,Ignore,Sandeep,Categorical,,Missing any vegetable responses
-_WT2RAKE,6313,n,Phone,Phone,cancer,test,Ignore,Sandeep,Categorical,,Design weight used in raking (Stratum weight (_STRWT) multiplied by the raw weighting factor (_RAWRAKE).)
-ACEADNED,8,y,Adverse Childhood Experiences,Basic Needs,basicneeds,na,ignore,Mousom,cat,ace_basicneeds_na_cat,"For how much of your childhood was there an adult in your household who tried hard to make sure your basic needs were met? Would you say never, a little of the time, some of the time, most of the time, or all of the time?"
-ACEADSAF,8,y,Adverse Childhood Experiences,Safe,safe,na,Can ignore this feature,Nalini,cat,ace_safe_na_cat,"For how much of your childhood was there an adult in your household who made you feel safe and protected? Would you say never, a little of the time, some of the time, most of the time, or all of the time?Â "
-ACEDEPRS,5,y,Adverse Childhood Experiences,Depressed,depressed,na,,Tim,bin,ace_depressed_na_bin,"Did you live with anyone who was depressed, mentally ill, or suicidal?"
-ACEDIVRC,6,y,Adverse Childhood Experiences,Parent Marital Status,parentmaritalstatus,na,VVIP,Mousom,bin,ace_parentmaritalstatus_na_bin,Were your parents separated or divorced?
-ACEDRINK,5,y,Adverse Childhood Experiences,Drinking,drinking,na,,Tim,bin,ace_drinking_na_bin,Did you live with anyone who was a problem drinker or alcoholic?
-ACEDRUGS,5,y,Adverse Childhood Experiences,Drugs,drugs,na,VVIP,Mousom,bin,ace_drugs_na_bin,Did you live with anyone who used illegal street drugs or who abused prescription medications?
-ACEHURT1,6,y,Adverse Childhood Experiences,Abuse,abuse,na,ignore,Mousom,cat,ace_abuse_na_cat,"Not including spanking, (before age 18), how often did a parent or adult in your home ever hit, beat, kick, or physically hurt you in any way? Was itâ€”"
-ACEHVSEX,6,y,Adverse Childhood Experiences,Forced Sex,forcedsex,na,Ignore,Mousom,cat,ace_forcedsex_na_cat,"How often did anyone at least 5 years older than you or an adult, force you to have sex?"
-ACEPRISN,5,y,Adverse Childhood Experiences,Prison,prison,na,,Tim,bin,ace_prison_na_bin,"Did you live with anyone who served time or was sentenced to serve time in a prison, jail, or other correctional facility?"
-ACEPUNCH,6,y,Adverse Childhood Experiences,Punch,punch,na,VVIP,Mousom,cat,ace_punch_na_cat,"How often did your parents or adults in your home ever slap, hit, kick, punch or beat each other up?"
-ACESWEAR,6,y,Adverse Childhood Experiences,Swear,swear,na,VVIP,Mousom,cat,ace_swear_na_cat,"How often did a parent or adult in your home ever swear at you, insult you, or put you down?"
-ACETOUCH,6,y,Adverse Childhood Experiences,Touched Sexually,touchedsexually,na,Ignore?,Mousom,cat,ace_touchedsexually_na_cat,"How often did anyone at least 5 years older than you or an adult, ever touch you sexually?"
-ACETTHEM,6,y,Adverse Childhood Experiences,Touch Them Sexually,touchthemsexually,na,Ignore?,Mousom,cat,ace_touchthemsexually_na_cat,"How often did anyone at least 5 years older than you or an adult, try to make you touch them sexually?"
-ADDEPEV3,5,y,Health Condition,Mental,mental,depressive,,Tim,bin,hc_mental_depressive_bin,(Ever told) you had a depressive disorder
-ALCDAY5,41,y,Social Habits,Alcohol,alcohol,howmany,VVIP,Nalini,cont,sh_alcohol_howmany_cont,"During the past 30 days, how many days per week or per month did you have at least one drink of any alcoholic beverage such as beer, wine, a malt beverage or liquor?"
-ARTHDIS2,5,y,Health Condition,arthritis,arthritis,test,Think about this,Nalini,bin,hc_arthritis_test_bin,"Do arthritis or joint symptoms now affect whether you work, the type of work you do or the amount of work you do?"
-ARTHEDU,5,y,Health Condition,arthritis,education,tomanage,Can ignore this feature,Nalini,bin,hc_education_tomanage_bin,Have you ever taken an educational course or class to teach you how to manage problems related to your arthritis or joint symptoms?
-ARTHEXER,5,y,Health Condition,arthritis,treat,exercise,Ignore,Nalini,bin,hc_treat_exercise_bin,"Has a doctor or other health professional ever suggested physical activity or exercise to help your arthritis or joint symptoms? (If the respondent is unclear about whether this means an increase or decrease in physical activity, this means increase.)"
-ASTHMA3,5,y,Health Condition,asthma,asthma,evertold,,Tim,bin,hc_asthma_evertold_bin,(Ever told) (you had) asthma?
-ASTHNOW,5,y,Health Condition,asthma,asthma,now,VVIP,Mousom,bin,hc_asthma_now_bin,Do you still have asthma?
-AVEDRNK3,55,y,Social Habits,Alcohol,alcohol,howmuch,Think about this,Nalini,cont,sh_alcohol_howmuch_cont,"One drink is equivalent to a 12-ounce beer, a 5-ounce glass of wine, or a drink with one shot of liquor. During the past 30 days, on the days when you drank, about how many drinks did you drink on the average? (A 40 ounce beer would count as 3 drinks, or a cocktail drink with 2 shots would count as 2 drinks.)"
-BIRTHSEX,5,n,Demographics,gender,cigarettes,na,Ignore,Mousom,Categorical,,What was your sex at birth? Was it male or female?
-BLDSTFIT,4,y,Health Condition,Cancer,cancer,bloodstoolfit,Ignore,Sandeep,bin,hc_cancer_bloodstoolfit_bin,Was the blood stool or FIT (you reported earlier) conducted as part of a Cologuard test?
-BLDSUGAR,102,y,Health Condition,Diabetes,diabetes,na,Ignore,Mousom,cont,hc_diabetes_na_cont,"About how often do you check your blood for glucose or sugar? [Include times when checked by a family member or friend, but do NOT include times when checked by a health professional.]"
-BLIND,5,y,Health Condition,vision,vision,test,,Tim,bin,hc_vision_test_bin,"Are you blind or do you have serious difficulty seeing, even when wearing glasses?"
-BPHIGH6,7,y,Health Condition,cvd,cvd,toldbphigh,,Tim,cat,hc_cvd_toldbphigh_cat,"Have you ever been told by a doctor, nurse or other health professional that you have high blood pressure? (If Â´YesÂ´ and respondent is female, ask Â´Was this only when you were pregnant?Â´.)"
-BPMEDS,5,y,Health Condition,cvd,cvd,bpmeds,VVIP,Mousom,bin,hc_cvd_bpmeds_bin,Are you currently taking medicine for your high blood pressure?
-CADULT1,2,n,Phone,Phone,cvd,treatment,Ignore,Sandeep,Categorical,,Is this a cell phone?
-CAGEG,5,n,Social Status,Children,hepatitis,outcome,Ignore,Monika,Categorical,,Four level child age
-CAREGIV1,6,y,Care Giver,General Care,generalcare,providecare,Ignore,Mousom,cat,cg_generalcare_providecare_cat,"During the past 30 days, did you provide regular care or assistance to a friend or family member who has a health problem or disability?"
-CASTHDX2,5,y,Health Condition,asthma,asthma,na,ignore,Monika,bin,hc_asthma_na_bin,"Has a doctor, nurse or other health professional EVER said that the child has asthma? "
-CASTHNO2,5,n,Child Demographics,asthma,vegetables,na,VVIP,Sandeep,Binary,,Does the child still have asthma?
-CCLGHOUS,2,n,Phone,Phone,veteran,na,Ignore,Sandeep,Categorical,,Do you live in college housing?
-CDASSIST,8,y,Health Condition,Cognitive,cognitive,assistancehowoften,ignore.,Monika,cat,hc_cognitive_assistancehowoften_cat,"As a result of confusion or memory loss, how often do you need assistance with these day-to-day activities?"
-CDDISCUS,5,y,Health Condition,cognitive,cognitive,na,Can ignore this feature,Nalini,bin,hc_cognitive_na_bin,Have you or anyone else discussed your confusion or memory loss with a health care professional?
-CDHELP,8,y,Health Condition,Cognitive,cognitive,howoftengethelp,Can ignore this feature,Nalini,cat,hc_cognitive_howoftengethelp_cat,"When you need help with these day-to-day activities, how often are you able to get the help that you need?"
-CDHOUSE,8,y,Health Condition,Cognitive,cognitive,activitylimit,Can ignore this feature,Nalini,cat,hc_cognitive_activitylimit_cat,"During the past 12 months, as a result of confusion or memory loss, how often have you given up day-to-day household activities or chores you used to do, such as cooking, cleaning, taking medications, driving, or paying bills?"
-CDSOCIAL,8,y,Health Condition,Cognitive,cognitive,condition,ignore,Monika,cat,hc_cognitive_condition_cat,"During the past 12 months, how often has confusion or memory loss interfered with your ability to work,
-volunteer, or engage in social activities outside the home? "
-CELLFON5,2,n,Phone,Phone,arthritis,condition,Ignore,Sandeep,Categorical,,Is this (phone number) ?
-CELLSEX,5,n,Demographics,gender,cancer,condition,VVIP,Monika,Categorical,,Are you male or female?
-CELPHON1,2,n,Phone,Phone,smoking,condition,Ignore,Sandeep,Categorical,,Is this a cell telephone?
-CERVSCRN,5,y,Health Condition,Cancer,cancer,cervicalscreentest,,Tim,bin,hc_cancer_cervicalscreentest_bin,Have you ever had a cervical cancer screening test?
-CHCCOPD3,5,y,Health Condition,respitory,respitory,onset,,Tim,bin,hc_respitory_onset_bin,Ever told you had C.O.P.D. emphysema or chronic bronchitis?
-CHCKDNY2,5,y,Health Condition,kidney,kidney,treatment,,Tim,bin,hc_kidney_treatment_bin,"Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?"
-CHCOCNCR,5,y,Health Condition,Cancer,cancer,othertypes,Ignore,Tim,bin,hc_cancer_othertypes_bin,(Ever told) you had any other types of cancer?
-CHCSCNCR,5,y,Health Condition,Cancer,cancer,impact,Ignore,Tim,bin,hc_cancer_impact_bin,(Ever told) you had skin cancer?
-CHECKUP1,8,y,General Health,Routine Checkup,routinecheckup,na,VVIP,Mousom,cat,gh_routinecheckup_na_cat,"About how long has it been since you last visited a doctor for a routine checkup? [A routine checkup is a general physical exam, not an exam for a specific injury, illness, or condition.]"
-CHILDREN,31,y,Demographics,gender,gender,na,Ignore?,Sandeep,cont,dem_gender_na_cont,How many children less than 18 years of age live in your household?
-CHKHEMO3,40,y,Health Condition,Diabetes,diabetes,a1cchecked12months,Ignore,Mousom,cat,hc_diabetes_a1cchecked12months_cat,"About how many times in the past 12 months has a doctor, nurse, or other health professional checked you for A-one-C?"
-CHOLCHK3,10,y,Health Condition,cvd,cvd,treatment,Ignore,Mousom,cat,hc_cvd_treatment_cat,About how long has it been since you last had your cholesterol checked?
-CHOLMED3,5,y,Health Condition,cvd,treat,cholesterol,VVIP,Tim,bin,hc_treat_cholesterol_bin,Currently taking medicine for high cholesterol
-CIMEMLOS,5,y,Health Condition,Mental,mental,na,Ignore,Mousom,bin,hc_mental_na_bin,"During the past 12 months, have you experienced confusion or memory loss that is happening more often or is getting worse?"
-CNCRAGE,98,y,Health Condition,Cancer,cancer,na,Ignore,Nalini,cont,hc_cancer_na_cont,"At what age were you told that you had cancer? (If Response = 2 (Two) or 3 (Three or more), ask: â€œAt what age was your first diagnosis of cancer?â€)"
-CNCRDIFF,6,y,Health Condition,Cancer,cancer,differenttypes,VVIP,Sandeep,cat,hc_cancer_differenttypes_cat,How many different types of cancer have you had?
-CNCRTYP1,33,y,Health Condition,Cancer,cancer,type,VVIP,Monika,cat,hc_cancer_type_cat,"What type of cancer was it? (If Response = 2 (Two) or 3 (Three or more), ask: â€œWith your most recent
-diagnoses of cancer, what type of cancer was it?â€)"
-COLGHOUS,2,n,Phone,Phone,potato,na,Ignore,Sandeep,Categorical,,Do you live in college housing?
-COLGSEX,3,n,Demographics,gender,diabetes,na,Ignore,Sandeep,Categorical,,Are you male or female?
-COLNCNCR,5,y,Health Condition,Cancer,cancer,colorectaltest,Ignore,Tim,bin,hc_cancer_colorectaltest_bin,"Have you ever had any other kind of test for colorectal cancer, such as virtual colonoscopy, CT colonography, blood stool test, FIT DNA, or Cologuard test?"
-COLNSIGM,6,y,Health Condition,Cancer,cancer,testever,Ignore,Mousom,cat,hc_cancer_testever_cat,"Have you had a colonoscopy, a sigmoidoscopy, or both?"
-COLNTES1,8,y,Health Condition,Cancer,cancer,testwhen,Can ignore this feature,Nalini,cat,hc_cancer_testwhen_cat,How long has it been since your most recent colonoscopy?
-CPDEMO1B,10,n,Phone,Phone,smoking,na,Ignore,Mousom,Categorical,,How many cell phones do you have for personal use?
-CRGVALZD,5,y,Care Giver,Cognitive,cognitive,na,Can ignore this feature,Nalini,bin,cg_cognitive_na_bin,"Does the person you care for also have AlzheimerÂ´s disease, dementia or other cognitive impairment disorder?"
-CRGVEXPT,5,y,Care Giver,General Care,generalcare,next2years,Ignore,Mousom,bin,cg_generalcare_next2years_bin,"In the next 2 years, do you expect to provide care or assistance to a friend or family member who has a health problem or disability?"
-CRGVHOU1,5,y,Care Giver,General Care,generalcare,past30days,Can ignore this feature,Nalini,bin,cg_generalcare_past30days_bin,"In the past 30 days, did you provide care for this person by managing household tasks such as cleaning, managing money, or preparing meals?"
-CRGVHRS1,7,y,Care Giver,General Care,generalcare,hoursperweek,ignore,Monika,cat,cg_generalcare_hoursperweek_cat,": In an average week, how many hours do you provide care or assistance?"
-CRGVLNG1,8,y,Care Giver,General Care,generalcare,providecarehowlong,ignore,Monika,cat,cg_generalcare_providecarehowlong_cat,For how long have you provided care for that person?
-CRGVPER1,5,y,Care Giver,General Care,generalcare,na,Can ignore this feature,Nalini,bin,cg_generalcare_na_bin,"In the past 30 days, did you provide care for this person by managing personal care such as giving medications, feeding, dressing, or bathing?"
-CRGVPRB3,18,y,Care Giver,Condition,condition,na,Can ignore this feature,Nalini,cat,cg_condition_na_cat,"What is the main health problem, long-term illness, or disability that the person you care for has?"
-CRGVREL4,18,y,Care Giver,Relationship,relationship,na,ignore,Monika,cat,cg_relationship_na_cat,What is his or her relationship to you?
-CRVCLCNC,8,y,Health Condition,Cancer,cancer,howlongscreentest,Ignore,Sandeep,cat,hc_cancer_howlongscreentest_cat,How long has it been since you had your last cervical cancer screening test?
-CRVCLHPV,5,y,Health Condition,Cancer,cancer,treatment,Can ignore this feature,Nalini,bin,hc_cancer_treatment_bin,"At your most recent cervical cancer screening, did you have an H.P.V. test?"
-CRVCLPAP,5,y,Health Condition,Cancer,cancer,paptest,Can ignore this feature,Nalini,bin,hc_cancer_paptest_bin,"At your most recent cervical cancer screening, did you have a Pap test?"
-CSRVCLIN,4,y,Health Condition,Cancer,cancer,clinicaltrial,VVIP,Sandeep,bin,hc_cancer_clinicaltrial_bin,Did you participate in a clinical trial as part of your cancer treatment?
-CSRVCTL2,6,y,Health Condition,Cancer,cancer,painundercontrol,VVIP,Sandeep,cat,hc_cancer_painundercontrol_cat,Would you say your pain is currently under controlâ€¦? (Cancer Survivorship: Pain Management)
-CSRVDEIN,5,y,Health Condition,Cancer,cancer,deniedhealthinsurance,ignore?,Monika,bin,hc_cancer_deniedhealthinsurance_bin,Were you ever denied health insurance or life insurance coverage because of your cancer?
-CSRVDOC1,13,y,Health Condition,Cancer,cancer,condition,ignore,Monika,cat,hc_cancer_condition_cat,: What type of doctor provides the majority of your health care?
-CSRVINSR,5,y,Health Condition,Cancer,cancer,healthinsurance,Ignore,Sandeep,bin,hc_cancer_healthinsurance_bin,"With your most recent diagnosis of cancer, did you have health insurance that paid for all or part of your cancer treatment? (â€œHealth insuranceâ€ also includes Medicare, Medicaid, or other types of state health programs.)  (Cancer Survivorship: Pain Management)"
-CSRVINST,5,y,Health Condition,Cancer,cancer,instructionswrittendown,ignore,Monika,bin,hc_cancer_instructionswrittendown_bin,Were these instructions written down or printed on paper for you?
-CSRVPAIN,5,y,Health Condition,Cancer,cancer,currentpain,ignore?,Monika,bin,hc_cancer_currentpain_bin,Do you currently have physical pain caused by your cancer or cancer treatment?
-CSRVRTRN,5,y,Health Condition,Cancer,cancer,instructionswheretogo,ignore,Monika,bin,hc_cancer_instructionswheretogo_bin,"Have you ever received instructions from a doctor, nurse, or other health professional about where you should
-return or who you should see for routine cancer check-ups after completing treatment for cancer? "
-CSRVSUM,5,y,Health Condition,Cancer,cancer,instructionswrittensummary,Ignore,Sandeep,bin,hc_cancer_instructionswrittensummary_bin,"Did any doctor, nurse, or other health professional ever give you a written summary of all the cancer treatments that you received?"
-CSRVTRT3,8,y,Health Condition,Cancer,cancer,currenttreatment,Can ignore this feature,Nalini,cat,hc_cancer_currenttreatment_cat,Are you currently receiving treatment for cancer?
-CSTATE1,3,n,Social Status,Residence,hpv,na,ignore,Monika,Categorical,,Do you live in a private residence?
-CTELENM1,3,n,Phone,Phone,height,na,ignore,Monika,Categorical,,phone no
-CTELNUM1,2,n,Phone,Phone,income,na,Ignore,Sandeep,Categorical,,Is this (phone number) ?
-CVDCRHD4,5,y,Health Condition,chd,chd,treatment,,Tim,bin,hc_chd_treatment_bin,(Ever told) (you had) angina or coronary heart disease?
-CVDINFR4,5,y,Health Condition,chd,chd,impact,,Tim,bin,hc_chd_impact_bin,"(Ever told) you had a heart attack, also called a myocardial infarction?"
-CVDSTRK3,5,y,Health Condition,cvd,cvd,stroke,,Tim,bin,hc_cvd_stroke_bin,(Ever told) (you had) a stroke
-DEAF,5,y,Health Condition,hearing,hearing,na,,Tim,bin,hc_hearing_na_bin,Are you deaf or do you have serious difficulty hearing?
-DECIDE,5,y,Health Condition,Mental,mental,decide,VVIP,Tim,bin,hc_mental_decide_bin,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?"
-IMFVPLA2,15,n,Vaccine,Flu,,category,ignore,Monika,Categorical,,At what kind of place did you get your last flu shot or vaccine?
-IMONTH,12,n,Key,Key,,Key,,,Categorical,,
-DIABAGE3,100,y,Health Condition,diabetes,diabetes,howold,Ignore,Nalini,cont,hc_diabetes_howold_cont,How old were you when you were told you had diabetes?
-DIABEDU,5,y,Health Condition,diabetes,diabetes,takenclass,Ignore,Mousom,bin,hc_diabetes_takenclass_bin,Have you ever taken a course or class in how to manage your diabetes yourself?
-DIABETE4,7,y,Health Condition,diabetes,diabetes,na,VVIP,Tim,cat,hc_diabetes_na_cat,(Ever told) you had diabetes
-DIABEYE,5,y,Health Condition,diabetes,diabetes,eyes,Ignore,Mousom,bin,hc_diabetes_eyes_bin,Has a doctor ever told you that diabetes has affected your eyes or that you had retinopathy?
-DIFFALON,5,n,vaccine,Flu,hepatitis,treatment,,Tim,Binary,,During what month and year did you receive your most recent flu vaccine that was sprayed in your nose or flu shot injected into your arm?
-DIFFDRES,5,y,Health Condition,Mobility,mobility,impact,,Tim,bin,hc_mobility_impact_bin,Difficulty Dressing or Bathing
-DIFFWALK,5,y,Health Condition,Mobility,mobility,na,,Tim,bin,hc_mobility_na_bin,Do you have serious difficulty walking or climbing stairs?
-DISPCODE,2,n,Key,Key,cancer,test,ignore,Monika,Categorical,,Final Disposition 
-DOCTDIAB,48,y,Health Condition,diabetes,diabetes,test,Ignore,Mousom,cont,hc_diabetes_test_cont,"About how many times in the past 12 months have you seen a doctor, nurse, or other health professional for your diabetes?"
-DRADVISE,5,y,Health Condition,cvd,cvd,reducesodium,,Tim,bin,hc_cvd_reducesodium_bin,Has a doctor or other health professional ever advised you to reduce sodium or salt intake?
-DRNK3GE5,50,y,Social Habits,Alcohol,alcohol,na,Ignore?,Sandeep,cont,sh_alcohol_na_cont,"Considering all types of alcoholic beverages, how many times during the past 30 days did you have 5 or more drinks for men or 4 or more drinks for women on an occasion?"
-DRNKANY5,4,y,Social Habits,Alcohol,alcohol,na,VVIP,Nalini,cont,sh_alcohol_na_cont,Adults who reported having had at least one drink of alcohol in the past 30 days.
-DROCDY3_,36,y,Social Habits,Alcohol,alcohol,perday,VVIP,Nalini,cont,sh_alcohol_perday_cont,Drink-occasions-per-day
-ECIGNOW1,7,y,Social Habits,Smoking,smoking,frequency,VVIP,Mousom,cat,sh_smoking_frequency_cat,"Do you now use e-cigarettes or other electronic vaping products every day, some days, or not at all?"
-EDUCA,8,y,Social Status,Education,education,na,VVIP,Sandeep,cat,ss_education_na_cat,What is the highest grade or year of school you completed?
-EMPLOY1,10,y,Social Status,Employment,employment,na,Ignore,Sandeep,cat,ss_employment_na_cat,Are you currently Employed?
-EXERANY2,5,y,General Health,Excercise,excercise,na,VVIP,Tim,bin,gh_excercise_na_bin,"During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise?"
-EYEEXAM1,8,y,Health Condition,vision,vision,na,Ignore,Mousom,cat,hc_vision_na_cat,"When was the last time you had an eye exam in which the pupils were dilated, making you temporarily sensitive to bright light?"
-FEETCHK,50,y,Health Condition,diabetes,diabetes,feetchecked,Can ignore this feature,Nalini,cont,hc_diabetes_feetchecked_cont,"Including times when checked by a family member or friend, about how often do you check your feet for any sores or irritations?"
-FEETCHK3,81,y,Health Condition,diabetes,diabetes,feetcheckedhowoften,Ignore; low correlation,Mousom,cont,hc_diabetes_feetcheckedhowoften_cont,"Including times when checked by a family member or friend, about how often do you check your feet for any sores or irritations?"
-FIREARM5,5,n,Social Status,Fire arms,cancer,test,ignore,Monika,Binary,,Are any firearms now kept in or around your home?
-FLSHTMY3,34,n,Vaccine,Flu,residence,na,Think about this,Nalini,Continuous,,During what month and year did you receive your most recent flu vaccine that was sprayed in your nose or flu shot injected into your arm?
-FLUSHOT7,5,y,Vaccine,flu,flu,na,,Tim,bin,vac_flu_na_bin,"During the past 12 months, have you had either flu vaccine that was sprayed in your nose or flu shot injected into your arm?"
-FMONTH,12,n,Key,Key,cancer,test,Ignore,Sandeep,Categorical,,File Month
-FRENCHF1,148,y,Nutrition,Fried,fried,howoften,Bucket the data,Nalini,cont,nut_fried_howoften_cont,"How often did you eat any kind of fried potatoes, including french fries, home fries, or hash browns?"
-FRNCHDA_,135,y,Nutrition,Fried,fried,intakeperday,VVIP,Monika,cont,nut_fried_intakeperday_cont,French Fry intake in times per day
-FRUIT2,174,y,Nutrition,Fruits,fruit,howmany,Ignore; low correlation,Mousom,cont,nut_fruit_howmany_cont,"Not including juices, how often did you eat fruit?"
-FRUITJU2,141,y,Nutrition,Fruits,Joice,howmany,VVIP,Nalini,cont,nut_Joice_howmany_cont,"Not including fruit-flavored drinks or fruit juices with added sugar, how often did you drink 100% fruit juice such as apple or orange juice?"
-FRUTDA2_,160,y,Nutrition,Fruits,fruit,timesperday,VVIP,Monika,cont,nut_fruit_timesperday_cont,Fruit intake in times per day
-FTJUDA2_,129,y,Nutrition,Fruits,juice,timesperday,VVIP,Monika,cont,nut_juice_timesperday_cont,Fruit juice intake in times per day
-FVGREEN1,172,y,Nutrition,Vegetables,vegetables,howmany,Ignore; low correlation,Mousom,cont,nut_vegetables_howmany_cont,"How often did you eat a green leafy or lettuce salad, with or without other vegetables?"
-GENHLTH,8,y,General Health,Status,status,na,VVIP,Sandeep,cat,gh_status_na_cat,Would you say that in general your health is:
-GRENDA1_,158,y,Nutrition,Vegetables,vegetables,timesperday,Important,Sandeep,cont,nut_vegetables_timesperday_cont,Dark green vegetable intake in times per day
-GUNLOAD,5,n,Social Status,Fire arms,cancer,test,ignore,Monika,Binary,,Are any of these firearms now loaded?
-HADHYST2,5,y,Health Condition,Cancer,cancer,hysterectomy,,Tim,bin,hc_cancer_hysterectomy_bin,Have you had a hysterectomy? (A hysterectomy is an operation to remove the uterus (womb).)
-HADMAM,5,y,Health Condition,Cancer,cancer,mammogram,,Tim,bin,hc_cancer_mammogram_bin,Have you ever had a mammogram?
-HADSIGM4,5,y,Health Condition,Cancer,cancer,colonoscopy,,Tim,bin,hc_cancer_colonoscopy_bin,Ever Had Sigmoidoscopy/Colonoscopy
-HAVARTH5,5,y,Health Condition,arthritis,arthritis,condition,,Tim,bin,hc_arthritis_condition_bin,Told Had Arthritis
-HAVECFS,1,n,Health Condition,fatigue,gender,na,Ignore,Sandeep,Binary,hc_is_fatigue,Do you still have Chronic Fatigue Syndrome (CFS) or (Myalgic Encephalomyelitis) ME?
-HAVEHEPB,5,y,Health Condition,hepatitis,hepatitis,na,,Tim,bin,hc_hepatitis_na_bin,"Has a doctor, nurse, or other health professional ever told you that you had hepatitis B?"
-HAVEHEPC,4,y,Health Condition,hepatitis,hepatitis,test,,Tim,bin,hc_hepatitis_test_bin,Do you still have Hepatitis C?
-HEIGHT3,143,n,General Health,height,vegetables,na,Ignore; low correlation,Mousom,Continuous,,"About how tall are you without shoes? (If respondent answers in metrics, put a 9 in the first column)[Round fractions down.]"
-HHADULT,33,y,Demographics,household,household,na,Think about this,Nalini,cont,dem_household_na_cont,"How many members of your household, including yourself, are 18 years of age or older?"
-HIVTST7,5,y,Health Condition,hiv,hiv,na,Ignore; low correlation,Mousom,bin,hc_hiv_na_bin,"Including fluid testing from your mouth, but not including tests you may have had for blood donation, have you ever been tested for H.I.V?"
-HIVTSTD3,489,y,Health Condition,HIV,hiv,test,ignore,Monika,cont,hc_hiv_test_cont,"Not including blood donations, in what month and year was your last H.I.V. test?"
-HOMBPCHK,5,y,Health Condition,cvd,cvd,toldcheckbp,,Tim,bin,hc_cvd_toldcheckbp_bin,Told check blood pressure at home
-HOMRGCHK,5,y,Health Condition,cvd,cvd,homecheckbp,,Tim,bin,hc_cvd_homecheckbp_bin,Regularly check blood pressure at home
-HOWLONG,8,y,Health Condition,Cancer,cancer,lastmammogram,Ignore,Sandeep,cat,hc_cancer_lastmammogram_cat,How long has it been since you had your last mammogram? (Breast and Cervical Cancer Screening)
-HPVADSHT,6,n,Vaccine,HPV,,category,Ignore; low correlation,Mousom,Categorical,,How many HPV shots did you receive?
-HPVADVC4,6,y,Vaccine,HPV,hpv,na,ignore?,Monika,bin,vac_hpv_na_bin,Have you ever had an H.P.V. vaccination?
-HTIN4,58,y,General Health,height,height,na,Important?,Sandeep,cont,gh_height_na_cont,Reported height in inches
-HTM4,111,n,General Health,height,,value,Important? (Either MTIN4 or HTM4),Sandeep,Continuous,,Reported height in meters
-IDATE,420,n,Key,Key,,Key,,,Continuous,,
-INCOME3,14,y,Social Status,Income,income,na,Ignore; low correlation,Mousom,cat,ss_income_na_cat,"Is your annual household income from all sources: (If respondent refuses at any income level, code  ÌRefused. Ì)"
-INSULIN1,5,y,Health Condition,diabetes,diabetes,treatment,,Tim,bin,hc_diabetes_treatment_bin,Are you now taking insulin?
-IYEAR,2,n,Key,Key,,Key,,,Categorical,,
-JOINPAI2,14,y,Health Condition,arthritis,arthritis,impact,Think about this,Nalini,cat,hc_arthritis_impact_cat,"During the past 30 days, how bad was your joint pain on average on a scale of 0 to 10 where 0 is no pain and 10 is pain or aching as bad as it can be?"
-LADULT1,3,n,Phone,Phone,,Phone,ignore,Monika,Categorical,,Is this a cell telephone?
-LANDLINE,5,n,Phone,Phone,,Phone,Think about this,Nalini,Categorical,,Do you also have a landline telephone in your home that is used to make and receive calls?
-LANDSEX,5,n,Demographics,gender,,category,Ignore,Nalini,Categorical,,Are you male or female?Â 
-LASTSIG4,8,y,Health Condition,Cancer,cancer,lastcolonoscopy,Ignore,Sandeep,cat,hc_cancer_lastcolonoscopy_cat,How long has it been since your most recent colonoscopy or sigmoidoscopy?
-LASTSMK2,11,y,Social Habits,Smoking,smoking,lastused,VVIP,Monika,cat,sh_smoking_lastused_cat,": How long has it been since you last smoked a cigarette, even one or two puffs?"
-LCSCTSCN,6,y,Health Condition,Cancer,cancer,test,,Tim,cat,hc_cancer_test_cat,"In the last 12 months, did you have a CT or CAT scan?"
-LCSFIRST,60,n,Social Habits,Smoking,,value,Ignore,Monika,Continuous,,How old were you when you first started to smoke cigarettes regularly
-LCSLAST,93,n,Social Habits,Smoking,,value,Ignore,Monika,Continuous,,How old were you when you last smoked cigarettes regularly?
-LCSNUMCG,65,n,Social Habits,Smoking,,value,Can ignore this feature,Nalini,Continuous,,"On average, when you smoke/smoked regularly, about how many cigarettes do/did you usually smoke each day?"
-LMTJOIN3,5,y,Health Condition,arthritis,arthritis,impact,Think about this,Nalini,bin,hc_arthritis_impact_bin,Are you now limited in any way in any of your usual activities because of arthritis or joint symptoms?
-LOADULK2,5,n,Social Status,Fire arms,,category,ignore,Monika,Binary,,Are any of these loaded firearms also unlocked? 
-MARIJAN1,34,y,Social Habits,marijuana,marijuana,na,Think about it,Sandeep,cont,sh_marijuana_na_cont,"During the past 30 days, on how many days did you use marijuana or cannabis?"
-MARITAL,8,y,Demographics,marital status,maritalstatus,na,Ignore; low correlation,Mousom,cat,dem_maritalstatus_na_cat,Are you: (marital status)
-MAXDRNKS,62,n,Social Habits,Alcohol,,value,Think about this,Nalini,Continuous,,"During the past 30 days, what is the largest number of drinks you had on any occasion?"
-MEDCOST1,5,y,Social Status,Cost,cost,na,Ignore; low correlation,Mousom,bin,ss_cost_na_bin,Was there a time in the past 12 months when you needed to see a doctor but could not because you could not afford it?
-MEDSHEPB,3,y,Health Condition,hepatitis,hepatitis,currentmedicine,ignore,Monika,bin,hc_hepatitis_currentmedicine_bin,Are you currently taking medicine to treat hepatitis B?
-MENTHLTH,34,y,Health Condition,Mental,mental,impact,VVIP,Monika,cont,hc_mental_impact_cont,"Now thinking about your mental health, which includes stress, depression, and problems with emotions, for
-how many days during the past 30 days was your mental health not good?"
-MSCODE,5,y,Demographics,Geographic,geographic,metro,ignore,Monika,cat,dem_geographic_metro_cat,Metropolitan Status Code 
-NUMADULT,16,n,Phone,Phone,,Phone,Ignore,Sandeep,Categorical,dem_num_of_household_adults,Number of Adults in Household
-NUMHHOL3,5,n,Phone,Phone,,Phone,,Tim,Categorical,,"Not including cell phones or numbers used for computers, fax machines or security systems, do you have more than one telephone number in your household?"
-NUMMEN,13,n,Demographics,gender,,category,Think about this. If needed for viz,Monika,Categorical,, How many of these adults are men? 
-NUMPHON3,10,n,Phone,Phone,,Phone,ignore,Monika,Categorical,,How many of these telephone numbers are residential numbers?
-NUMWOMEN,12,n,Demographics,gender,,category,ignore,Monika,Categorical,,So the number of women in the household is [X
-PCPSARS2,6,y,Health Condition,Cancer,cancer,psatest,Ignore,Sandeep,cat,hc_cancer_psatest_cat,What was the main reason you had this P.S.A. test â€“ was it â€¦?
-PCSTALK,7,y,Health Condition,Cancer,cancer,psatesteverhad,ignore,Monika,cat,hc_cancer_psatesteverhad_cat,Have you ever had a P.S.A. test?
-PDIABTST,5,y,Health Condition,diabetes,diabetes,test,,Tim,bin,hc_diabetes_test_bin,Had a test for high blood sugar or diabetes in the past three years?
-PERSDOC3,6,y,General Health,Care Provider,careprovider,na,Ignore; low correlation,Mousom,bin,gh_careprovider_na_bin,Do you have one person (or a group of doctors) that you think of as your personal health care provider?
-PHYSHLTH,34,y,General Health,Status,status,na,Ignore,Monika,cont,gh_status_na_cont,"Now thinking about your physical health, which includes physical illness and injury, for how many days during
+var,raw_type,raw_map,num_unique_responses,num_response_nulls,category,category_abbreviated,subcategory1,var_type,cat_column_name,model_learn,model_top10,visual_component,visual_old_name,survey_question
+acehurt1,num,,6,381899,Adverse Childhood Experiences,ace,abuse,cat,ace_abuse_acehurt1_cat,,,,,"Not including spanking, (before age 18), how often did a parent or adult in your home ever hit, beat, kick, or physically hurt you in any way? Was itâ€”"
+aceadned,num,,8,381581,Adverse Childhood Experiences,ace,basicneeds,cat,ace_basicneeds_aceadned_cat,,,,,"For how much of your childhood was there an adult in your household who tried hard to make sure your basic needs were met? Would you say never, a little of the time, some of the time, most of the time, or all of the time?"
+acedeprs,num,,5,381433,Adverse Childhood Experiences,ace,depressed,bin,ace_depressed_acedeprs_bin,,,,,"Did you live with anyone who was depressed, mentally ill, or suicidal?"
+acedrink,num,,5,381216,Adverse Childhood Experiences,ace,drinking,bin,ace_drinking_acedrink_bin,,,,,Did you live with anyone who was a problem drinker or alcoholic?
+acedrugs,num,,5,381274,Adverse Childhood Experiences,ace,drugs,bin,ace_drugs_acedrugs_bin,,,,,Did you live with anyone who used illegal street drugs or who abused prescription medications?
+acehvsex,num,,6,382100,Adverse Childhood Experiences,ace,forcedsex,cat,ace_forcedsex_acehvsex_cat,,,,,"How often did anyone at least 5 years older than you or an adult, force you to have sex?"
+acedivrc,num,,6,381408,Adverse Childhood Experiences,ace,parentmaritalstatus,bin,ace_parentmaritalstatus_acedivrc_bin,,,,,Were your parents separated or divorced?
+aceprisn,num,,5,381129,Adverse Childhood Experiences,ace,prison,bin,ace_prison_aceprisn_bin,,,,,"Did you live with anyone who served time or was sentenced to serve time in a prison, jail, or other correctional facility?"
+acepunch,num,,6,382148,Adverse Childhood Experiences,ace,punch,cat,ace_punch_acepunch_cat,,,,,"How often did your parents or adults in your home ever slap, hit, kick, punch or beat each other up?"
+aceadsaf,num,,8,381672,Adverse Childhood Experiences,ace,safe,cat,ace_safe_aceadsaf_cat,,,,,"For how much of your childhood was there an adult in your household who made you feel safe and protected? Would you say never, a little of the time, some of the time, most of the time, or all of the time?Â "
+aceswear,num,,6,382186,Adverse Childhood Experiences,ace,swear,cat,ace_swear_aceswear_cat,,,,,"How often did a parent or adult in your home ever swear at you, insult you, or put you down?"
+acetouch,num,,6,382120,Adverse Childhood Experiences,ace,touchedsexually,cat,ace_touchedsexually_acetouch_cat,,,,,"How often did anyone at least 5 years older than you or an adult, ever touch you sexually?"
+acetthem,num,,6,382120,Adverse Childhood Experiences,ace,touchthemsexually,cat,ace_touchthemsexually_acetthem_cat,,,,,"How often did anyone at least 5 years older than you or an adult, try to make you touch them sexually?"
+casthno2,num,,5,433093,Child Demographics,cd,current,bin,cd_current_casthno2_bin,,,,,Does the child still have asthma?
+rcsgendr,num,,4,385174,Child Demographics,cd,gender,cat,cd_gender_rcsgendr_cat,,,,,Is the child a boy or a girl? (Random Child Selection)
+_cprace1,num,,10,383099,Child Demographics,cd,race,cat,cd_race__cprace1_cat,,,,,Preferred Child Race Categories
+rcsrltn2,num,,9,384349,Child Demographics,cd,relationship,cat,cd_relationship_rcsrltn2_cat,,,,,How are you related to the child?
+crgvhou1,num,,5,400805,Care Giver,cg,30dayhousecare,bin,cg_30dayhousecare_crgvhou1_bin,,,,,"In the past 30 days, did you provide care for this person by managing household tasks such as cleaning, managing money, or preparing meals?"
+crgvper1,num,,5,400749,Care Giver,cg,30daymedsfeedbathecare,bin,cg_30daymedsfeedbathecare_crgvper1_bin,,,,,"In the past 30 days, did you provide care for this person by managing personal care such as giving medications, feeding, dressing, or bathing?"
+caregiv1,num,,6,251500,Care Giver,cg,30dayregularcare,cat,cg_30dayregularcare_caregiv1_cat,,,,,"During the past 30 days, did you provide regular care or assistance to a friend or family member who has a health problem or disability?"
+crgvalzd,num,,5,405142,Care Giver,cg,alzheimers,bin,cg_alzheimers_crgvalzd_bin,,,,,"Does the person you care for also have AlzheimerÂ´s disease, dementia or other cognitive impairment disorder?"
+crgvprb3,num,,18,402314,Care Giver,cg,condition,cat,cg_condition_crgvprb3_cat,,,,,"What is the main health problem, long-term illness, or disability that the person you care for has?"
+crgvhrs1,num,,7,402847,Care Giver,cg,hoursperweek,cat,cg_hoursperweek_crgvhrs1_cat,,,,,": In an average week, how many hours do you provide care or assistance?"
+crgvlng1,num,,8,400848,Care Giver,cg,howlongprovidecare,cat,cg_howlongprovidecare_crgvlng1_cat,,,,,For how long have you provided care for that person?
+crgvexpt,num,,5,300854,Care Giver,cg,next2yearsgeneralcare,bin,cg_next2yearsgeneralcare_crgvexpt_bin,,,,,"In the next 2 years, do you expect to provide care or assistance to a friend or family member who has a health problem or disability?"
+crgvrel4,num,,18,400396,Care Giver,cg,relationshiptoyou,cat,cg_relationshiptoyou_crgvrel4_cat,,,,,What is his or her relationship to you?
+_age_g,num,,6,0,Demographics,dem,age,cat,dem_age__age_g_cat,1,1,,,Imputed age in six groups
+_age65yr,num,,3,9607,Demographics,dem,age,cat,dem_age__age65yr_cat,,,,,Reported age in two age groups calculated variable
+_age80,num,,63,0,Demographics,dem,age,cont,dem_age__age80_cont,,,Age,dem_age_na_cont,Imputed Age value collapsed above 80
+_ageg5yr,num,,14,0,Demographics,dem,age,cat,dem_age__ageg5yr_cat,,,,,Reported age in five-year age categories calculated variable
+birthsex,num,,5,340512,Demographics,dem,gender,cat,dem_gender_birthsex_cat,,,,,What was your sex at birth? Was it male or female?
+cellsex,num,,5,117944,Demographics,dem,gender,cat,dem_gender_cellsex_cat,,,,,Are you male or female?
+children,num,,31,10695,Demographics,dem,gender,cont,dem_gender_children_cont,,,,,How many children less than 18 years of age live in your household?
+colgsex,num,,3,438663,Demographics,dem,gender,cat,dem_gender_colgsex_cat,,,,,Are you male or female?
+landsex,num,,5,388864,Demographics,dem,gender,cat,dem_gender_landsex_cat,,,,,Are you male or female?Â 
+nummen,num,,13,373255,Demographics,dem,gender,cat,dem_gender_nummen_cat,,,,, How many of these adults are men? 
+numwomen,num,,12,373255,Demographics,dem,gender,cat,dem_gender_numwomen_cat,,,,,So the number of women in the household is [X
+sexvar,num,,2,0,Demographics,dem,gender,cat,dem_gender_sexvar_cat,,,,,Sex of RespondentÂ 
+trnsgndr,num,,7,196664,Demographics,dem,gender,bin,dem_gender_trnsgndr_bin,,,,,Do you consider yourself to be transgender?
+_metstat,num,,3,7054,Demographics,dem,geographic,cat,dem_geographic__metstat_cat,1,,,,Metropolitan Status
+_urbstat,num,,3,7054,Demographics,dem,geographic,cat,dem_geographic__urbstat_cat,1,,,,Urban/Rural Status
+mscode,num,,5,322720,Demographics,dem,geographic,cat,dem_geographic_mscode_cat,,,,,Metropolitan Status Code 
+hhadult,num,,33,120435,Demographics,dem,household,cont,dem_household_hhadult_cont,,,,,"How many members of your household, including yourself, are 18 years of age or older?"
+qstlang,num,,2,0,Demographics,dem,language,cat,dem_language_qstlang_cat,1,,,,Language identifier
+marital,num,,8,4988,Demographics,dem,maritalstatus,cat,dem_maritalstatus_marital_cat,1,,,,Are you: (marital status)
+_chldcnt,num,,7,695,Demographics,dem,numchildeninhouse,cat,dem_numchildeninhouse__chldcnt_cat,1,,,,Number of children in household
+_chispnc,num,,4,258533,Demographics,dem,race,cat,dem_race__chispnc_cat,,,,,"Child Hispanic, Latino/a, or Spanish origin calculated variable"
+_hispanc,num,,3,5937,Demographics,dem,race,cat,dem_race__hispanc_cat,,,,,"Hispanic, Latino/a, or Spanish origin calculated variable"
+_mrace1,num,,10,13363,Demographics,dem,race,cat,dem_race__mrace1_cat,,,,,Race/ethnicity categories
+_prace1,num,,11,13363,Demographics,dem,race,cat,dem_race__prace1_cat,,,,,Preferred race category
+_race,num,,9,10990,Demographics,dem,race,cat,dem_race__race_cat,,,,,Race/ethnicity categories
+_raceg21,num,,3,10990,Demographics,dem,race,cat,dem_race__raceg21_cat,,,,,White non-Hispanic race group
+_racegr3,num,,6,10990,Demographics,dem,race,cat,dem_race__racegr3_cat,,,,,Five-level race/ethnicity category
+_raceprv,num,,8,0,Demographics,dem,race,cat,dem_race__raceprv_cat,,,,,Computed race groups used for internet prevalence tables
+_sex,num,,2,0,Demographics,dem,sex,cat,dem_sex__sex_cat,1,1,GENDER,dem_gender_na_cat,Calculated sex variable
+sofemale,num,,7,310622,Demographics,dem,sexidentity,cat,dem_sexidentity_sofemale_cat,,,,,Which of the following best represents how you think of yourself?
+somale,num,,7,327101,Demographics,dem,sexidentity,cat,dem_sexidentity_somale_cat,,,,,Which of the following best represents how you think of yourself?
+_imprace,num,,6,0,Demographics,dem,state,cat,dem_state__imprace_cat,1,,Race,dem_race_na_cat,Computed race groups used for internet prevalence tables
+_state,num,,53,0,Demographics,dem,state,cat,dem_state__state_cat,1,,map,dem_state_na_cat,State FIPS Code
+statere1,num,,2,320907,Demographics,dem,state,bin,dem_state_statere1_bin,,,,,Do you currently live in ____(state)____?
+_bmi5,num,,3888,46852,General Health,gh,bmi,cont,gh_bmi__bmi5_cont,,,,,Body Mass Index (BMI)
+_bmi5cat,num,,5,46852,General Health,gh,bmi,cat,gh_bmi__bmi5cat_cat,1,,BMI,gh_bmi_na_cat,Four-categories of Body Mass Index (BMI)
+persdoc3,num,,6,3705,General Health,gh,careprovider,bin,gh_careprovider_persdoc3_bin,1,1,,,Do you have one person (or a group of doctors) that you think of as your personal health care provider?
+_totinda,num,,3,928,General Health,gh,excercise,bin,gh_excercise__totinda_bin,1,,,,Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
+exerany2,num,,5,928,General Health,gh,excercise,bin,gh_excercise_exerany2_bin,1,,,,"During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise?"
+_rfhlth,num,,3,1161,General Health,gh,healthstatus,cat,gh_healthstatus__rfhlth_cat,1,1,Status,gh_status_na_cat,Adults with good or better health
+height3,num,,143,24559,General Health,gh,height,cont,gh_height_height3_cont,,,,,"About how tall are you without shoes? (If respondent answers in metrics, put a 9 in the first column)[Round fractions down.]"
+htin4,num,,58,27150,General Health,gh,height,cont,gh_height_htin4_cont,1,,,,Reported height in inches
+htm4,num,,111,24562,General Health,gh,height,cont,gh_height_htm4_cont,,,,,Reported height in meters
+pregnant,num,,5,358646,General Health,gh,pregnant,bin,gh_pregnant_pregnant_bin,,,,,Pregnancy Status
+checkup1,num,,8,5905,General Health,gh,routinecheckup,cat,gh_routinecheckup_checkup1_cat,1,,,,"About how long has it been since you last visited a doctor for a routine checkup? [A routine checkup is a general physical exam, not an exam for a specific injury, illness, or condition.]"
+_phys14d,num,,4,9494,General Health,gh,status,cat,gh_status__phys14d_cat,1,,,,"3 level not good physical health status: 0 days, 1-13 days, 14-30 days"
+genhlth,num,,8,1161,General Health,gh,status,cat,gh_status_genhlth_cat,1,,,,Would you say that in general your health is:
+physhlth,num,,34,9494,General Health,gh,status,cont,gh_status_physhlth_cont,,,,,"Now thinking about your physical health, which includes physical illness and injury, for how many days during
 the past 30 days was your physical health not good?"
-PNEUVAC4,5,y,Vaccine,pneumonia,pneumonia,everhadshot,Ignore; low correlation,Mousom,bin,vac_pneumonia_everhadshot_bin,Have you ever had a pneumonia shot also known as a pneumococcal vaccine?
-POORHLTH,34,y,Health Condition,MentalPhysical,mentalphysical,impact,ignore?,Nalini,cont,hc_mentalphysical_impact_cont,"During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual activities, such as self-care, work, or recreation?"
-POTADA1_,130,y,Nutrition,Potato,potato,servingsperday,Think about it,Sandeep,cont,nut_potato_servingsperday_cont,Potato servings per day
-POTATOE1,142,y,Nutrition,Potato,potato,howoften,,Nalini,cont,nut_potato_howoften_cont,"How often did you eat any other kind of potatoes, or sweet potatoes, such as baked, boiled, mashed potatoes, or potato salad?"
-PREDIAB1,6,y,Health Condition,diabetes,diabetes,atrisk,,Tim,bin,hc_diabetes_atrisk_bin,Ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes?
-PREGNANT,5,y,General Health,Pregnant,pregnant,na,,Tim,bin,gh_pregnant_na_bin,Pregnancy Status
-PRIMINSR,14,n,Social Status,Health Insurance,,category,Ignore; low correlation,Mousom,Categorical,,What is the current primary source of your health insurance?
-PRIRHEPC,4,y,Health Condition,hepatitis,hepatitis,prior2015,Can ignore this feature,Nalini,bin,hc_hepatitis_prior2015_bin,Were you treated for Hepatitis C prior to 2015?
-PSATEST1,5,y,Health Condition,Cancer,cancer,psatest,,Tim,bin,hc_cancer_psatest_bin,Ever Had PSA Test (Prostate)
-PSATIME1,8,y,Health Condition,Cancer,cancer,howlong,Ignore,Sandeep,cat,hc_cancer_howlong_cat,About how long has it been since your most recent P.S.A. test?
-PVTRESD1,3,n,Phone,Phone,,Phone,ignore,Monika,Binary,,Is this a private residence
-PVTRESD3,3,n,Phone,Phone,,Phone,ignore,Monika,Binary,,Do you live in a private residence?
-QSTLANG,2,n,Demographics,Language,,category,ignore,Monika,Categorical,,Language identifier
-QSTVER,8,n,Phone,Phone,,Phone,ignore,Monika,Categorical,,Questionnaire Version Identifier
-RCSGENDR,4,n,Child Demographics,Gender,,category,Important,Sandeep,Categorical,,Is the child a boy or a girl? (Random Child Selection)
-RCSRLTN2,9,n,Child Demographics,Relationship,,category,ignore,Monika,Categorical,,How are you related to the child?
-RENTHOM1,6,y,Social Status,Residence,residence,na,,Tim,cat,ss_residence_na_cat,Do you own or rent your home?
-RESPSLCT,5,n,Phone,Phone,,Phone,Ignore; low correlation,Mousom,Categorical,,The person in your household that I need to speak with is [XXX]. Are you the [XXX] in this household
-RSNMRJN2,6,y,Social Habits,marijuana,marijuana,usetype,Can ignore this feature,Nalini,cat,sh_marijuana_usetype_cat,"When you used marijuana or cannabis during the past 30 days, was it usually:"
-SAFETIME,2,n,Phone,Phone,,Phone,Ignore,Sandeep,Categorical,,Is this a safe time to talk with you?
-SDNATES1,7,y,Health Condition,Cancer,cancer,stool,Ignore; low correlation,Mousom,cat,hc_cancer_stool_cat,How long since you had stool DNA
-SEQNO,39095,n,Key,Key,,Key,,,Continuous,,
-SEXVAR,2,n,Demographics,gender,,category,Ignore,Nalini,Categorical,,Sex of RespondentÂ 
-SHAREBP,7,y,Health Condition,cvd,cvd,test,Ignore; low correlation,Mousom,cat,hc_cvd_test_cat,"How do you share your blood pressure numbers that you collected with your health professional? Is it mostly by telephone, other methods such as emails, internet portal or fax, or in person?"
-SHINGLE2,5,y,vaccine,shingleszoster,shingleszoster,na,,Tim,bin,vac_shingleszoster_na_bin,Have you ever had the shingles or zoster vaccine?
-SIGMTES1,7,y,Health Condition,Cancer,cancer,sigmoidoscopy,,Tim,cat,hc_cancer_sigmoidoscopy_cat,How long since you had sigmoidoscopy
-SMALSTOL,4,y,Health Condition,Cancer,cancer,stoolspecialkit,Ignore,Sandeep,bin,hc_cancer_stoolspecialkit_bin,One stool test uses a special kit to obtain a small amount of stool at home and returns the kit to the doctor or the lab. Have you ever had this test?
-SMOKDAY2,6,y,Social Habits,cigarettes,cigarettes,now,VVIP,Sandeep,cat,sh_cigarettes_now_cat,"Do you now smoke cigarettes every day, some days, or not at all?"
-SMOKE100,5,y,Social Habits,cigarettes,cigarettes,100perlife,,Tim,bin,sh_cigarettes_100perlife_bin,Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]
-SOFEMALE,7,y,Demographics,sex,sex,femalehowyouthink,Ignore; related to 63,Mousom,cat,dem_sex_femalehowyouthink_cat,Which of the following best represents how you think of yourself?
-SOMALE,7,y,Demographics,sex,sex,malehowyouthink,,Mousom,cat,dem_sex_malehowyouthink_cat,Which of the following best represents how you think of yourself?
-STATERE1,2,n,Demographics,State,,category,Ignore,Sandeep,Binary,,Do you currently live in ____(state)____?
-STOLTEST,7,y,Health Condition,Cancer,cancer,stooltesthowlong,Can ignore this feature,Nalini,cat,hc_cancer_stooltesthowlong_cat,How long since you had stool test?
-STOOLDN1,5,y,Health Condition,Cancer,cancer,stooltesthome,ignore?,Monika,bin,hc_cancer_stooltesthome_bin,"Another stool test uses a special kit to obtain an entire bowel movement at home and returns the kit to a lab.
+_rfbmi5,num,,3,46852,General Health,gh,weight,bin,gh_weight__rfbmi5_bin,,,,,Adults who have a body mass index greater than 25.00 (Overweight or Obese)
+weight2,num,,588,40575,General Health,gh,weight,cont,gh_weight_weight2_cont,,,,,About how much do you weigh without shoes?
+wtkg3,num,,572,40588,General Health,gh,weight,cont,gh_weight_wtkg3_cont,1,,,,Reported weight in kilograms
+_drdxar3,num,,3,2896,Health Condition,hc,arthritis,cat,hc_arthritis__drdxar3_cat,1,,,hc_arthritis_hascondition_bin,Respondents who have had a doctor diagnose them as having some form of arthritis
+_casthm1,num,,3,3558,Health Condition,hc,asthma,bin,hc_asthma__casthm1_bin,1,,,hc_asthma_hascondition_bin,Adults who have been told they currently have asthma
+_lmtact3,num,,5,4318,Health Condition,hc,arthritis,cat,hc_arthritis__lmtact3_cat,,,,,Limited usual activities
+_lmtwrk3,num,,5,6239,Health Condition,hc,arthritis,cat,hc_arthritis__lmtwrk3_cat,,,,,Limited work activities
+arthdis2,num,,5,299495,Health Condition,hc,arthritis,bin,hc_arthritis_arthdis2_bin,,,,,"Do arthritis or joint symptoms now affect whether you work, the type of work you do or the amount of work you do?"
+arthedu,num,,5,296799,Health Condition,hc,arthritis,bin,hc_arthritis_arthedu_bin,,,,,Have you ever taken an educational course or class to teach you how to manage problems related to your arthritis or joint symptoms?
+havarth5,num,,5,2896,Health Condition,hc,arthritis,bin,hc_arthritis_havarth5_bin,,,,,Told Had Arthritis
+joinpai2,num,,14,298763,Health Condition,hc,arthritis,cat,hc_arthritis_joinpai2_cat,,,,,"During the past 30 days, how bad was your joint pain on average on a scale of 0 to 10 where 0 is no pain and 10 is pain or aching as bad as it can be?"
+lmtjoin3,num,,5,297574,Health Condition,hc,arthritis,bin,hc_arthritis_lmtjoin3_bin,,,,,Are you now limited in any way in any of your usual activities because of arthritis or joint symptoms?
+_asthms1,num,,4,3558,Health Condition,hc,asthma,cat,hc_asthma__asthms1_cat,,,,,Computed asthma status
+chcocncr,num,,5,1364,Health Condition,hc,cancer,bin,hc_cancer_chcocncr_bin,1,,,hc_cancer_hascondition_bin,(Ever told) you had any other types of cancer?
+_ltasth1,num,,3,1746,Health Condition,hc,asthma,bin,hc_asthma__ltasth1_bin,,,,,Adults who have ever been told they have asthma
+asthma3,num,,5,1746,Health Condition,hc,asthma,bin,hc_asthma_asthma3_bin,,,,,(Ever told) (you had) asthma?
+asthnow,num,,5,379003,Health Condition,hc,asthma,bin,hc_asthma_asthnow_bin,,,,,Do you still have asthma?
+casthdx2,num,,5,386717,Health Condition,hc,asthma,bin,hc_asthma_casthdx2_bin,,,,,"Has a doctor, nurse or other health professional EVER said that the child has asthma? "
+bldstfit,num,,4,438379,Health Condition,hc,cancer,bin,hc_cancer_bldstfit_bin,,,,,Was the blood stool or FIT (you reported earlier) conducted as part of a Cologuard test?
+cervscrn,num,,5,429903,Health Condition,hc,cancer,bin,hc_cancer_cervscrn_bin,,,,,Have you ever had a cervical cancer screening test?
+_michd,num,,3,4635,Health Condition,hc,chd,cat,hc_chd__michd_cat,1,,,hc_chd_hascondition_bin,Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI)
+chcscncr,num,,5,1441,Health Condition,hc,cancer,bin,hc_cancer_chcscncr_bin,,,,,(Ever told) you had skin cancer?
+cncrage,num,,98,429283,Health Condition,hc,cancer,cont,hc_cancer_cncrage_cont,,,,,"At what age were you told that you had cancer? (If Response = 2 (Two) or 3 (Three or more), ask: â€œAt what age was your first diagnosis of cancer?â€)"
+cncrdiff,num,,6,428887,Health Condition,hc,cancer,cat,hc_cancer_cncrdiff_cat,,,,,How many different types of cancer have you had?
+cncrtyp1,num,,33,429414,Health Condition,hc,cancer,cat,hc_cancer_cncrtyp1_cat,,,,,"What type of cancer was it? (If Response = 2 (Two) or 3 (Three or more), ask: â€œWith your most recent
+diagnoses of cancer, what type of cancer was it?â€)"
+colncncr,num,,5,431175,Health Condition,hc,cancer,bin,hc_cancer_colncncr_bin,,,,,"Have you ever had any other kind of test for colorectal cancer, such as virtual colonoscopy, CT colonography, blood stool test, FIT DNA, or Cologuard test?"
+colnsigm,num,,6,433162,Health Condition,hc,cancer,cat,hc_cancer_colnsigm_cat,,,,,"Have you had a colonoscopy, a sigmoidoscopy, or both?"
+colntes1,num,,8,434185,Health Condition,hc,cancer,cat,hc_cancer_colntes1_cat,,,,,How long has it been since your most recent colonoscopy?
+crvclcnc,num,,8,433998,Health Condition,hc,cancer,cat,hc_cancer_crvclcnc_cat,,,,,How long has it been since you had your last cervical cancer screening test?
+crvclhpv,num,,5,435339,Health Condition,hc,cancer,bin,hc_cancer_crvclhpv_bin,,,,,"At your most recent cervical cancer screening, did you have an H.P.V. test?"
+crvclpap,num,,5,434009,Health Condition,hc,cancer,bin,hc_cancer_crvclpap_bin,,,,,"At your most recent cervical cancer screening, did you have a Pap test?"
+csrvclin,num,,4,434316,Health Condition,hc,cancer,bin,hc_cancer_csrvclin_bin,,,,,Did you participate in a clinical trial as part of your cancer treatment?
+csrvctl2,num,,6,437858,Health Condition,hc,cancer,cat,hc_cancer_csrvctl2_cat,,,,,Would you say your pain is currently under controlâ€¦? (Cancer Survivorship: Pain Management)
+csrvdein,num,,5,434292,Health Condition,hc,cancer,bin,hc_cancer_csrvdein_bin,,,,,Were you ever denied health insurance or life insurance coverage because of your cancer?
+csrvdoc1,num,,13,434364,Health Condition,hc,cancer,cat,hc_cancer_csrvdoc1_cat,,,,,: What type of doctor provides the majority of your health care?
+csrvinsr,num,,5,434310,Health Condition,hc,cancer,bin,hc_cancer_csrvinsr_bin,,,,,"With your most recent diagnosis of cancer, did you have health insurance that paid for all or part of your cancer treatment? (â€œHealth insuranceâ€ also includes Medicare, Medicaid, or other types of state health programs.)  (Cancer Survivorship: Pain Management)"
+csrvinst,num,,5,435540,Health Condition,hc,cancer,bin,hc_cancer_csrvinst_bin,,,,,Were these instructions written down or printed on paper for you?
+csrvpain,num,,5,429773,Health Condition,hc,cancer,bin,hc_cancer_csrvpain_bin,,,,,Do you currently have physical pain caused by your cancer or cancer treatment?
+csrvrtrn,num,,5,434345,Health Condition,hc,cancer,bin,hc_cancer_csrvrtrn_bin,,,,,"Have you ever received instructions from a doctor, nurse, or other health professional about where you should
+return or who you should see for routine cancer check-ups after completing treatment for cancer? "
+csrvsum,num,,5,434508,Health Condition,hc,cancer,bin,hc_cancer_csrvsum_bin,,,,,"Did any doctor, nurse, or other health professional ever give you a written summary of all the cancer treatments that you received?"
+csrvtrt3,num,,8,431525,Health Condition,hc,cancer,cat,hc_cancer_csrvtrt3_cat,,,,,Are you currently receiving treatment for cancer?
+hadhyst2,num,,5,429371,Health Condition,hc,cancer,bin,hc_cancer_hadhyst2_bin,,,,,Have you had a hysterectomy? (A hysterectomy is an operation to remove the uterus (womb).)
+hadmam,num,,5,429218,Health Condition,hc,cancer,bin,hc_cancer_hadmam_bin,,,,,Have you ever had a mammogram?
+hadsigm4,num,,5,431008,Health Condition,hc,cancer,bin,hc_cancer_hadsigm4_bin,,,,,Ever Had Sigmoidoscopy/Colonoscopy
+howlong,num,,8,431363,Health Condition,hc,cancer,cat,hc_cancer_howlong_cat,,,,,How long has it been since you had your last mammogram? (Breast and Cervical Cancer Screening)
+lastsig4,num,,8,437781,Health Condition,hc,cancer,cat,hc_cancer_lastsig4_cat,,,,,How long has it been since your most recent colonoscopy or sigmoidoscopy?
+lcsctscn,num,,6,409043,Health Condition,hc,cancer,cat,hc_cancer_lcsctscn_cat,,,,,"In the last 12 months, did you have a CT or CAT scan?"
+pcpsars2,num,,6,437590,Health Condition,hc,cancer,cat,hc_cancer_pcpsars2_cat,,,,,What was the main reason you had this P.S.A. test â€“ was it â€¦?
+pcstalk,num,,7,437688,Health Condition,hc,cancer,cat,hc_cancer_pcstalk_cat,,,,,Have you ever had a P.S.A. test?
+psatest1,num,,5,436606,Health Condition,hc,cancer,bin,hc_cancer_psatest1_bin,,,,,Ever Had PSA Test (Prostate)
+psatime1,num,,8,437596,Health Condition,hc,cancer,cat,hc_cancer_psatime1_cat,,,,,About how long has it been since your most recent P.S.A. test?
+sdnates1,num,,7,438320,Health Condition,hc,cancer,cat,hc_cancer_sdnates1_cat,,,,,How long since you had stool DNA
+sigmtes1,num,,7,438631,Health Condition,hc,cancer,cat,hc_cancer_sigmtes1_cat,,,,,How long since you had sigmoidoscopy
+smalstol,num,,4,437099,Health Condition,hc,cancer,bin,hc_cancer_smalstol_bin,,,,,One stool test uses a special kit to obtain a small amount of stool at home and returns the kit to the doctor or the lab. Have you ever had this test?
+stoltest,num,,7,437505,Health Condition,hc,cancer,cat,hc_cancer_stoltest_cat,,,,,How long since you had stool test?
+stooldn1,num,,5,437119,Health Condition,hc,cancer,bin,hc_cancer_stooldn1_bin,,,,,"Another stool test uses a special kit to obtain an entire bowel movement at home and returns the kit to a lab.
 Have you ever had this Cologuard test? "
-STOPSMK2,5,n,Social Habits,Smoking,,category,Can ignore this feature,Nalini,Binary,,"During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?"
-TETANUS1,7,y,Vaccine,Tetanus,tetanus,na,,Tim,cat,vac_tetanus_na_cat,Received Tetanus Shot Since 2005?
-TOLDCFS,1,n,Health Condition,fatigue,,condition,Ignore,Sandeep,Binary,hc_is_fatigue,Have you ever been told by a doctor or other health professional that you had Chronic Fatigue Syndrome (CFS) or (Myalgic Encephalomyelitis) ME?
-TOLDHEPC,5,y,Health Condition,hepatitis,hepatitis,evertold,,Tim,bin,hc_hepatitis_evertold_bin,Have you ever been told by a doctor or other health professional that you had Hepatitis C?
-TOLDHI3,5,y,Health Condition,cvd,cvd,cholesteroltoldhigh,,Tim,bin,hc_cvd_cholesteroltoldhigh_bin,"Adults who have had their cholesterol checked and have been told by a doctor, nurse, or other health professional that it was high"
-TRETHEPC,4,y,Health Condition,Hepatitis,hepatitis,treat2015,Ignore,Sandeep,bin,hc_hepatitis_treat2015_bin,Were you treated for Hepatitis C in 2015 or after?
-TRNSGNDR,7,y,Demographics,gender,gender,na,,Tim,bin,dem_gender_na_bin,Do you consider yourself to be transgender?
-USEMRJN3,9,n,NA,NA,,NA,Ignore,Sandeep,Categorical,,Did not find this field
-USENOW3,6,y,Social Habits,Smokeless Tobacco,smokelesstobacco,na,,Tim,cat,sh_smokelesstobacco_na_cat,Use of Smokeless Tobacco Products
-VCLNTES1,8,y,Health Condition,Cancer,cancer,recentcolonoscopy,,Tim,cat,hc_cancer_recentcolonoscopy_cat,When was your most recent CT colonography or virtual colonoscopy?
-VEGEDA2_,158,y,Nutrition,Vegetables,vegetables,otherintake,VVIP,Monika,cont,nut_vegetables_otherintake_cont,Other vegetable intake in times per day
-VEGETAB2,169,y,Nutrition,Vegetables,vegetables,otherhowoften,VVIP,Mousom,cont,nut_vegetables_otherhowoften_cont,"Not including lettuce salads and potatoes, how often did you eat other vegetables?"
-VETERAN3,5,y,Social Status,veteran,veteran,na,,Tim,bin,ss_veteran_na_bin,"Have you ever served on active duty in the United States Armed Forces, either in the regular military or in a National Guard or military reserve unit?"
-VIRCOLO1,5,y,Health Condition,Cancer,cancer,virtualcolonoscopy,Ignore,Sandeep,bin,hc_cancer_virtualcolonoscopy_bin,A virtual colonoscopy uses a series of X-rays to take pictures of inside the colon. Have you ever had a virtual colonoscopy?
-WEIGHT2,588,y,General Health,Weight,weight,na,,Mousom,cont,gh_weight_na_cont,About how much do you weigh without shoes?
-WHEREBP,6,y,Health Condition,cvd,test,bp,ignore,Monika,cat,hc_test_bp_cat,": Do you take it mostly at home or on a machine at a pharmacy, grocery or similar location?"
-WORKCFS,1,n,Social Status,Employment,,category,Ignore,Sandeep,Categorical,,"Thinking about your CFS or ME, during the past 6 months, how many hours a week on average have you been able to work at a job or business for pay?"
-WTCHSALT,5,y,Nutrition,sodium,sodium,na,Can ignore this feature,Nalini,bin,nut_sodium_na_bin,Are you currently watching or reducing your sodium or salt intake?
-WTKG3,572,n,General Health,Weight,,value,VVIP,Sandeep,Continuous,,Reported weight in kilograms
-DERIVED_HAS_ARTHRITIS,,y,Health Condition,arthritis,arthritis,hascondition,,Tim,bin,hc_arthritis_hascondition_bin,Has Arthritis?
-DERIVED_HAS_ASTHMA,,y,Health Condition,asthma,asthma,hascondition,,Tim,bin,hc_asthma_hascondition_bin,Has asthma?
-DERIVED_HAS_ASTHMA,,y,Health Condition,Cancer,cancer,hascondition,,Tim,bin,hc_cancer_hascondition_bin,Has cancer?
-DERIVED_HAS_CHD,,y,Health Condition,chd,chd,hascondition,,Tim,bin,hc_chd_hascondition_bin,Has CHD?
-DERIVED_HAS_COGNITIVE,,y,Health Condition,Cognitive,cognitive,hascondition,,Tim,bin,hc_cognitive_hascondition_bin,Has Cognitive?
-DERIVED_HAS_CVD,,y,Health Condition,cvd,cvd,hascondition,,Tim,bin,hc_cvd_hascondition_bin,Has CVD?
-DERIVED_HAS_DIABETES,,y,Health Condition,diabetes,diabetes,hascondition,,Tim,bin,hc_diabetes_hascondition_bin,Has Diabetes?
-DERIVED_HAS_HEARING,,y,Health Condition,hearing,hearing,hascondition,,Tim,bin,hc_hearing_hascondition_bin,Has Hearing?
-DERIVED_HAS_HEPATITIS,,y,Health Condition,Hepatitis,hepatitis,hascondition,,Tim,bin,hc_hepatitis_hascondition_bin,Has Hepititis?
-DERIVED_HAS_KIDNEY,,y,Health Condition,kidney,kidney,hascondition,,Tim,bin,hc_kidney_hascondition_bin,Has Kidney?
-DERIVED_HAS_MENTAL,,y,Health Condition,Mental,mental,hascondition,,Tim,bin,hc_mental_hascondition_bin,Has MENTAL?
-DERIVED_HAS_MOBILITY,,y,Health Condition,Mobility,mobility,hascondition,,Tim,bin,hc_mobility_hascondition_bin,Has MOBILITY?
-DERIVED_HAS_RESPITORY,,y,Health Condition,respitory,respitory,hascondition,,Tim,bin,hc_respitory_hascondition_bin,Has RESPITORY?
-DERIVED_HAS_VISION,,y,Health Condition,vision,vision,hascondition,,Tim,bin,hc_vision_hascondition_bin,Has VISION?
+vclntes1,num,,8,438507,Health Condition,hc,cancer,cat,hc_cancer_vclntes1_cat,,,,,When was your most recent CT colonography or virtual colonoscopy?
+vircolo1,num,,5,437124,Health Condition,hc,cancer,bin,hc_cancer_vircolo1_bin,,,,,A virtual colonoscopy uses a series of X-rays to take pictures of inside the colon. Have you ever had a virtual colonoscopy?
+cdassist,num,,8,434378,Health Condition,hc,cognitive,cat,hc_cognitive_cdassist_cat,,,,hc_cognitive_hascondition_bin,"As a result of confusion or memory loss, how often do you need assistance with these day-to-day activities?"
+cvdcrhd4,num,,5,4275,Health Condition,hc,chd,bin,hc_chd_cvdcrhd4_bin,,,,,(Ever told) (you had) angina or coronary heart disease?
+cvdinfr4,num,,5,2655,Health Condition,hc,chd,bin,hc_chd_cvdinfr4_bin,,,,,"(Ever told) you had a heart attack, also called a myocardial infarction?"
+_cholch3,num,,4,29782,Health Condition,hc,cvd,cat,hc_cvd__cholch3_cat,1,,,,Cholesterol check within past five years
+cddiscus,num,,5,434390,Health Condition,hc,cognitive,bin,hc_cognitive_cddiscus_bin,,,,,Have you or anyone else discussed your confusion or memory loss with a health care professional?
+cdhelp,num,,8,437426,Health Condition,hc,cognitive,cat,hc_cognitive_cdhelp_cat,,,,,"When you need help with these day-to-day activities, how often are you able to get the help that you need?"
+cdhouse,num,,8,434397,Health Condition,hc,cognitive,cat,hc_cognitive_cdhouse_cat,,,,,"During the past 12 months, as a result of confusion or memory loss, how often have you given up day-to-day household activities or chores you used to do, such as cooking, cleaning, taking medications, driving, or paying bills?"
+cdsocial,num,,8,434430,Health Condition,hc,cognitive,cat,hc_cognitive_cdsocial_cat,,,,,"During the past 12 months, how often has confusion or memory loss interfered with your ability to work,
+volunteer, or engage in social activities outside the home? "
+_rfchol3,num,,4,64289,Health Condition,hc,cvd,bin,hc_cvd__rfchol3_bin,1,,,,"Adults who have had their cholesterol checked and have been told by a doctor, nurse, or other health professional that it was high"
+_rfhype6,num,,3,1912,Health Condition,hc,cvd,bin,hc_cvd__rfhype6_bin,1,1,,hc_cvd_hascondition_bin,"Adults who have been told they have high blood pressure by a doctor, nurse, or other health professional"
+cholchk3,num,,10,29782,Health Condition,hc,cvd,cat,hc_cvd_cholchk3_cat,1,1,,,About how long has it been since you last had your cholesterol checked?
+bphigh6,num,,7,1912,Health Condition,hc,cvd,cat,hc_cvd_bphigh6_cat,,,,,"Have you ever been told by a doctor, nurse or other health professional that you have high blood pressure? (If Â´YesÂ´ and respondent is female, ask Â´Was this only when you were pregnant?Â´.)"
+bpmeds,num,,5,267019,Health Condition,hc,cvd,bin,hc_cvd_bpmeds_bin,,,,,Are you currently taking medicine for your high blood pressure?
+cholmed3,num,,5,63455,Health Condition,hc,cvd,bin,hc_cvd_cholmed3_bin,1,,,,Currently taking medicine for high cholesterol
+cvdstrk3,num,,5,1429,Health Condition,hc,cvd,bin,hc_cvd_cvdstrk3_bin,1,,,,(Ever told) (you had) a stroke
+diabete4,num,,7,985,Health Condition,hc,diabetes,cat,hc_diabetes_diabete4_cat,1,,,hc_diabetes_hascondition_bin,(Ever told) you had diabetes
+dradvise,num,,5,402896,Health Condition,hc,cvd,bin,hc_cvd_dradvise_bin,,,,,Has a doctor or other health professional ever advised you to reduce sodium or salt intake?
+hombpchk,num,,5,313454,Health Condition,hc,cvd,bin,hc_cvd_hombpchk_bin,,,,,Told check blood pressure at home
+homrgchk,num,,5,313330,Health Condition,hc,cvd,bin,hc_cvd_homrgchk_bin,,,,,Regularly check blood pressure at home
+sharebp,num,,7,399653,Health Condition,hc,cvd,cat,hc_cvd_sharebp_cat,,,,,"How do you share your blood pressure numbers that you collected with your health professional? Is it mostly by telephone, other methods such as emails, internet portal or fax, or in person?"
+toldhi3,num,,5,63980,Health Condition,hc,cvd,bin,hc_cvd_toldhi3_bin,,,,,"Adults who have had their cholesterol checked and have been told by a doctor, nurse, or other health professional that it was high"
+wherebp,num,,6,399421,Health Condition,hc,cvd,cat,hc_cvd_wherebp_cat,,,,,": Do you take it mostly at home or on a machine at a pharmacy, grocery or similar location?"
+bldsugar,num,,102,417170,Health Condition,hc,diabetes,cont,hc_diabetes_bldsugar_cont,,,,,"About how often do you check your blood for glucose or sugar? [Include times when checked by a family member or friend, but do NOT include times when checked by a health professional.]"
+chkhemo3,num,,40,417564,Health Condition,hc,diabetes,cont,hc_diabetes_chkhemo3_cont,,,,,"About how many times in the past 12 months has a doctor, nurse, or other health professional checked you for A-one-C?"
+diabage3,num,,100,385749,Health Condition,hc,diabetes,cont,hc_diabetes_diabage3_cont,,,,,How old were you when you were told you had diabetes?
+diabedu,num,,5,416618,Health Condition,hc,diabetes,bin,hc_diabetes_diabedu_bin,,,,,Have you ever taken a course or class in how to manage your diabetes yourself?
+deaf,num,,5,16398,Health Condition,hc,hearing,bin,hc_hearing_deaf_bin,1,,,hc_hearing_hascondition_bin,Are you deaf or do you have serious difficulty hearing?
+diabeye,num,,5,416788,Health Condition,hc,diabetes,bin,hc_diabetes_diabeye_bin,,,,,Has a doctor ever told you that diabetes has affected your eyes or that you had retinopathy?
+doctdiab,num,,48,419020,Health Condition,hc,diabetes,cont,hc_diabetes_doctdiab_cont,,,,,"About how many times in the past 12 months have you seen a doctor, nurse, or other health professional for your diabetes?"
+feetchk,num,,50,417321,Health Condition,hc,diabetes,cont,hc_diabetes_feetchk_cont,,,,,"Including times when checked by a family member or friend, about how often do you check your feet for any sores or irritations?"
+feetchk3,num,,81,417279,Health Condition,hc,diabetes,cont,hc_diabetes_feetchk3_cont,,,,,"Including times when checked by a family member or friend, about how often do you check your feet for any sores or irritations?"
+insulin1,num,,5,416523,Health Condition,hc,diabetes,bin,hc_diabetes_insulin1_bin,,,,,Are you now taking insulin?
+pdiabtst,num,,5,329651,Health Condition,hc,diabetes,bin,hc_diabetes_pdiabtst_bin,,,,,Had a test for high blood sugar or diabetes in the past three years?
+prediab1,num,,6,324705,Health Condition,hc,diabetes,bin,hc_diabetes_prediab1_bin,,,,,Ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes?
+havecfs,num,,1,438693,Health Condition,hc,fatigue,bin,hc_fatigue_havecfs_bin,,,,,Do you still have Chronic Fatigue Syndrome (CFS) or (Myalgic Encephalomyelitis) ME?
+toldcfs,num,,1,438693,Health Condition,hc,fatigue,bin,hc_fatigue_toldcfs_bin,,,,,Have you ever been told by a doctor or other health professional that you had Chronic Fatigue Syndrome (CFS) or (Myalgic Encephalomyelitis) ME?
+toldhepc,num,,5,427950,Health Condition,hc,hepatitis,bin,hc_hepatitis_toldhepc_bin,,,,hc_hepatitis_hascondition_bin,Have you ever been told by a doctor or other health professional that you had Hepatitis C?
+havehepb,num,,5,427996,Health Condition,hc,hepatitis,bin,hc_hepatitis_havehepb_bin,,,,,"Has a doctor, nurse, or other health professional ever told you that you had hepatitis B?"
+havehepc,num,,4,438548,Health Condition,hc,hepatitis,bin,hc_hepatitis_havehepc_bin,,,,,Do you still have Hepatitis C?
+medshepb,num,,3,438598,Health Condition,hc,hepatitis,bin,hc_hepatitis_medshepb_bin,,,,,Are you currently taking medicine to treat hepatitis B?
+prirhepc,num,,4,438537,Health Condition,hc,hepatitis,bin,hc_hepatitis_prirhepc_bin,,,,,Were you treated for Hepatitis C prior to 2015?
+_aidtst4,num,,4,3010,Health Condition,hc,hiv,bin,hc_hiv__aidtst4_bin,1,,,,Adults who have ever been tested for HIV
+trethepc,num,,4,438537,Health Condition,hc,hepatitis,bin,hc_hepatitis_trethepc_bin,,,,,Were you treated for Hepatitis C in 2015 or after?
+chckdny2,num,,5,1813,Health Condition,hc,kidney,bin,hc_kidney_chckdny2_bin,1,,,hc_kidney_hascondition_bin,"Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?"
+hivtst7,num,,5,51856,Health Condition,hc,hiv,bin,hc_hiv_hivtst7_bin,,,,,"Including fluid testing from your mouth, but not including tests you may have had for blood donation, have you ever been tested for H.I.V?"
+hivtstd3,num,,489,348712,Health Condition,hc,hiv,cont,hc_hiv_hivtstd3_cont,,,,,"Not including blood donations, in what month and year was your last H.I.V. test?"
+addepev3,num,,5,2517,Health Condition,hc,mental,bin,hc_mental_addepev3_bin,1,,,,(Ever told) you had a depressive disorder
+_ment14d,num,,4,7917,Health Condition,hc,mental,cat,hc_mental__ment14d_cat,,,,,"3 level not good mental health status: 0 days, 1-13 days, 14-30 days"
+decide,num,,5,19980,Health Condition,hc,mental,bin,hc_mental_decide_bin,1,,,hc_mental_hascondition_bin,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?"
+cimemlos,num,,5,405938,Health Condition,hc,mental,bin,hc_mental_cimemlos_bin,,,,,"During the past 12 months, have you experienced confusion or memory loss that is happening more often or is getting worse?"
+diffalon,num,,5,21425,Health Condition,hc,mental,bin,hc_mental_diffalon_bin,1,,,,Difficulty Doing Errands Alone
+menthlth,num,,34,7917,Health Condition,hc,mental,cont,hc_mental_menthlth_cont,1,,,,"Now thinking about your mental health, which includes stress, depression, and problems with emotions, for
+how many days during the past 30 days was your mental health not good?"
+diffdres,num,,5,19716,Health Condition,hc,mobility,bin,hc_mobility_diffdres_bin,1,,,,Difficulty Dressing or Bathing
+poorhlth,num,,34,210586,Health Condition,hc,mentalphysical,cont,hc_mentalphysical_poorhlth_cont,,,,,"During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual activities, such as self-care, work, or recreation?"
+diffwalk,num,,5,19830,Health Condition,hc,mobility,bin,hc_mobility_diffwalk_bin,1,,,hc_mobility_hascondition_bin,Do you have serious difficulty walking or climbing stairs?
+chccopd3,num,,5,2107,Health Condition,hc,respitory,bin,hc_respitory_chccopd3_bin,1,,,hc_respitory_hascondition_bin,Ever told you had C.O.P.D. emphysema or chronic bronchitis?
+arthexer,num,,5,298335,Health Condition,hc,alcohol,bin,hc_alcohol_arthexer_bin,,,exercise,hc_treat_exercise_bin,"Has a doctor or other health professional ever suggested physical activity or exercise to help your arthritis or joint symptoms? (If the respondent is unclear about whether this means an increase or decrease in physical activity, this means increase.)"
+blind,num,,5,17351,Health Condition,hc,vision,bin,hc_vision_blind_bin,1,,,hc_vision_hascondition_bin,"Are you blind or do you have serious difficulty seeing, even when wearing glasses?"
+eyeexam1,num,,8,416960,Health Condition,hc,vision,cat,hc_vision_eyeexam1_cat,,,,,"When was the last time you had an eye exam in which the pupils were dilated, making you temporarily sensitive to bright light?"
+_psu,num,,39095,0,NA,na,na,cont,na_na__psu_cont,,,,,Primary Sampling Unit (Equal to Annual Sequence Number) 
+_ststr,num,,2140,0,NA,na,na,cont,na_na__ststr_cont,,,,,"Sample Design Stratification Variable (Prior to 2011: _STSTR is a five digit number that combines the values for _STATE (first two characters), _GEOSTR (third and fourth character), and _DENSTR2 (final character).)"
+dispcode,num,,2,0,NA,na,na,cat,na_na_dispcode_cat,,,,,Final Disposition 
+fmonth,num,,12,0,NA,na,na,cat,na_na_fmonth_cat,,,,,File Month
+idate,text,"cast( ( substring(idate from 7 for 4) || substring(idate from 3 for 2) || substring(idate from 5 for 2) ) as numeric) as idate,",420,0,NA,na,na,cont,na_na_idate_cont,,,,,
+iday,text,"cast(substring(iday from 3 for 2) as numeric) as iday,",31,0,NA,na,na,cont,na_na_iday_cont,,,,,
+imonth,text,"cast(substring(imonth from 3 for 2) as numeric) as imonth,",12,0,NA,na,na,cat,na_na_imonth_cat,,,,,
+iyear,text,"cast(substring(iyear from 3 for 4) as numeric) as iyear,",2,0,NA,na,na,cont,na_na_iyear_cont,,,,,
+seqno,text,"cast(substring(seqno from 3 for 10) as numeric) as seqno,",39095,0,NA,na,na,cont,na_na_seqno_cont,,,,,
+usemrjn3,num,,9,438693,NA,na,na,cat,na_na_usemrjn3_cat,,,,,Did not find this field
+frenchf1,num,,148,44765,Nutrition,nut,fried,cont,nut_fried_frenchf1_cont,,,NUT,nut_fried_howoften_cont,"How often did you eat any kind of fried potatoes, including french fries, home fries, or hash browns?"
+frnchda_,num,,135,44765,Nutrition,nut,fried,cont,nut_fried_frnchda__cont,1,,,,French Fry intake in times per day
+_frt16a,num,,2,0,Nutrition,nut,fruit,cat,nut_fruit__frt16a_cat,,,,,Reported consuming Fruit >16 per day
+_frtlt1a,num,,3,28983,Nutrition,nut,fruit,cat,nut_fruit__frtlt1a_cat,,,,,Consume Fruit 1 or more times per day
+_frtres1,num,,2,392693,Nutrition,nut,fruit,cat,nut_fruit__frtres1_cat,,,,,Missing any fruit responses
+_fruite1,num,,3,392693,Nutrition,nut,fruit,cat,nut_fruit__fruite1_cat,,,,,Question: Fruit Exclusion from analyses
+_frutsu1,num,,729,5107,Nutrition,nut,fruit,cont,nut_fruit__frutsu1_cont,1,,,,Total fruits consumed per day
+_misfrt1,num,,3,438693,Nutrition,nut,fruit,cat,nut_fruit__misfrt1_cat,,,,,The number of missing fruit responses
+fruitju2,num,,141,44349,Nutrition,nut,fruit,cont,nut_fruit_fruitju2_cont,,,,,"Not including fruit-flavored drinks or fruit juices with added sugar, how often did you drink 100% fruit juice such as apple or orange juice?"
+frutda2_,num,,160,43951,Nutrition,nut,fruit,cont,nut_fruit_frutda2__cont,,,,,Fruit intake in times per day
+fruit2,num,,174,43951,Nutrition,nut,fruitjuice,cont,nut_fruitjuice_fruit2_cont,,,NUT,nut_fruit_howmany_cont,"Not including juices, how often did you eat fruit?"
+ftjuda2_,num,,129,44349,Nutrition,nut,fruitjuice,cont,nut_fruitjuice_ftjuda2__cont,1,,,,Fruit juice intake in times per day
+fvgreen1,num,,172,44250,Nutrition,nut,greens,cont,nut_greens_fvgreen1_cont,,,NUT,nut_vegetables_howmany_cont,"How often did you eat a green leafy or lettuce salad, with or without other vegetables?"
+grenda1_,num,,158,44250,Nutrition,nut,greens,cont,nut_greens_grenda1__cont,1,,,,Dark green vegetable intake in times per day
+potada1_,num,,130,48440,Nutrition,nut,potato,cont,nut_potato_potada1__cont,1,,,,Potato servings per day
+potatoe1,num,,142,48440,Nutrition,nut,potato,cont,nut_potato_potatoe1_cont,,,,,"How often did you eat any other kind of potatoes, or sweet potatoes, such as baked, boiled, mashed potatoes, or potato salad?"
+wtchsalt,num,,5,402852,Nutrition,nut,sodium,bin,nut_sodium_wtchsalt_bin,,,,,Are you currently watching or reducing your sodium or salt intake?
+_misveg1,num,,5,438693,Nutrition,nut,vegetables,cat,nut_vegetables__misveg1_cat,,,,,The number of missing vegetable responses
+_veg23a,num,,2,0,Nutrition,nut,vegetables,cat,nut_vegetables__veg23a_cat,,,,,Reported consuming Vegetables >23 per day
+_vegesu1,num,,2362,60127,Nutrition,nut,vegetables,cont,nut_vegetables__vegesu1_cont,1,,,,Total vegetables consumed per day
+_vegete1,num,,3,438693,Nutrition,nut,vegetables,cat,nut_vegetables__vegete1_cat,,,,,Vegetable Exclusion from analyses
+_veglt1a,num,,3,60127,Nutrition,nut,vegetables,cat,nut_vegetables__veglt1a_cat,,,,,Consume Vegetables 1 or more times per day
+_vegres1,num,,2,0,Nutrition,nut,vegetables,cat,nut_vegetables__vegres1_cat,,,,,Missing any vegetable responses
+vegeda2_,num,,158,48528,Nutrition,nut,vegetablesother,cont,nut_vegetablesother_vegeda2__cont,1,,,,Other vegetable intake in times per day
+vegetab2,num,,169,48528,Nutrition,nut,vegetablesother,cont,nut_vegetablesother_vegetab2_cont,,,,,"Not including lettuce salads and potatoes, how often did you eat other vegetables?"
+_cllcpwt,num,,19512,38599,Phone,phone,na,cat,phone_na__cllcpwt_cat,,,,,Final child weight: Land-line and Cell-Phone data (Raking derived weight)
+_crace1,num,,10,382537,Phone,phone,na,cat,phone_na__crace1_cat,,,,,Child multiracial race categorization
+_dualcor,num,,107,264965,Phone,phone,na,cat,phone_na__dualcor_cat,,,,,Dual phone use correction factor
+_dualuse,num,,3,0,Phone,phone,na,cat,phone_na__dualuse_cat,,,,,Dual Phone Use Categories
+_llcpwt,num,,258033,0,Phone,phone,na,cont,phone_na__llcpwt_cont,,,,,Truncated design weight used in adult combined land line and cell phone raking 
+_llcpwt2,num,,14331,0,Phone,phone,na,cont,phone_na__llcpwt2_cont,,,,,Truncated design weight used in adult combined land line and cell phone raking 
+_rawrake,num,,12,0,Phone,phone,na,cont,phone_na__rawrake_cont,,,,,"Raw weighting factor used in raking (Number of adults in the household (NUMADULT, maximum of 5) divided by the imputed number of phones (_IMPNPH, maximum of 3).)"
+_strwt,num,,1575,0,Phone,phone,na,cont,phone_na__strwt_cont,,,,,Stratum weight (Number of records in a stratum (NRECSTR) divided by the number of records selected (NRECSEL).)
+_wt2rake,num,,6313,0,Phone,phone,na,cont,phone_na__wt2rake_cont,,,,,Design weight used in raking (Stratum weight (_STRWT) multiplied by the raw weighting factor (_RAWRAKE).)
+cadult1,num,,2,117786,Phone,phone,na,cat,phone_na_cadult1_cat,,,,,Is this a cell phone?
+cclghous,num,,2,437438,Phone,phone,na,cat,phone_na_cclghous_cat,,,,,Do you live in college housing?
+cellfon5,num,,2,117786,Phone,phone,na,cat,phone_na_cellfon5_cat,,,,,Is this (phone number) ?
+celphon1,num,,2,320907,Phone,phone,na,cat,phone_na_celphon1_cat,,,,,Is this a cell telephone?
+colghous,num,,2,438663,Phone,phone,na,cat,phone_na_colghous_cat,,,,,Do you live in college housing?
+cpdemo1b,num,,10,6424,Phone,phone,na,cat,phone_na_cpdemo1b_cat,,,,,How many cell phones do you have for personal use?
+ctelenm1,num,,3,320907,Phone,phone,na,cat,phone_na_ctelenm1_cat,,,,,phone no
+ctelnum1,num,,2,117787,Phone,phone,na,cat,phone_na_ctelnum1_cat,,,,,Is this (phone number) ?
+ladult1,num,,3,320907,Phone,phone,na,cat,phone_na_ladult1_cat,,,,,Is this a cell telephone?
+landline,num,,5,118924,Phone,phone,na,cat,phone_na_landline_cat,,,,,Do you also have a landline telephone in your home that is used to make and receive calls?
+numadult,num,,16,320926,Phone,phone,na,cat,phone_na_numadult_cat,,,,,Number of Adults in Household
+numhhol3,num,,5,322098,Phone,phone,na,cat,phone_na_numhhol3_cat,,,,,"Not including cell phones or numbers used for computers, fax machines or security systems, do you have more than one telephone number in your household?"
+numphon3,num,,10,407472,Phone,phone,na,cat,phone_na_numphon3_cat,,,,,How many of these telephone numbers are residential numbers?
+pvtresd1,num,,3,320907,Phone,phone,na,bin,phone_na_pvtresd1_bin,,,,,Is this a private residence
+pvtresd3,num,,3,117786,Phone,phone,na,bin,phone_na_pvtresd3_bin,,,,,Do you live in a private residence?
+qstver,num,,8,0,Phone,phone,na,cat,phone_na_qstver_cat,,,,,Questionnaire Version Identifier
+respslct,num,,5,374038,Phone,phone,na,cat,phone_na_respslct_cat,,,,,The person in your household that I need to speak with is [XXX]. Are you the [XXX] in this household
+safetime,num,,2,117786,Phone,phone,na,cat,phone_na_safetime_cat,,,,,Is this a safe time to talk with you?
+_drnkwk1,num,,285,34993,Social Habits,sh,alcohol,cont,sh_alcohol__drnkwk1_cont,,,,,Calculated total number of alcoholic beverages consumed per week
+_rfbing5,num,,3,35322,Social Habits,sh,alcohol,bin,sh_alcohol__rfbing5_bin,1,,,,"Binge drinkers (males having five or more drinks on one occasion, females having four or more drinks on one occasion)"
+_rfdrhv7,num,,3,34993,Social Habits,sh,alcohol,bin,sh_alcohol__rfdrhv7_bin,1,,SH,sh_alcohol_heavy_bin,Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week)
+alcday5,num,,41,30589,Social Habits,sh,alcohol,cont,sh_alcohol_alcday5_cont,,,,,"During the past 30 days, how many days per week or per month did you have at least one drink of any alcoholic beverage such as beer, wine, a malt beverage or liquor?"
+avedrnk3,num,,55,231865,Social Habits,sh,alcohol,cont,sh_alcohol_avedrnk3_cont,,,,,"One drink is equivalent to a 12-ounce beer, a 5-ounce glass of wine, or a drink with one shot of liquor. During the past 30 days, on the days when you drank, about how many drinks did you drink on the average? (A 40 ounce beer would count as 3 drinks, or a cocktail drink with 2 shots would count as 2 drinks.)"
+drnk3ge5,num,,50,232194,Social Habits,sh,alcohol,cont,sh_alcohol_drnk3ge5_cont,,,,,"Considering all types of alcoholic beverages, how many times during the past 30 days did you have 5 or more drinks for men or 4 or more drinks for women on an occasion?"
+drnkany5,num,,4,30589,Social Habits,sh,alcohol,cat,sh_alcohol_drnkany5_cat,,,,,Adults who reported having had at least one drink of alcohol in the past 30 days.
+drocdy3_,num,,36,30589,Social Habits,sh,alcohol,cont,sh_alcohol_drocdy3__cont,,,,,Drink-occasions-per-day
+maxdrnks,num,,62,236891,Social Habits,sh,alcohol,cont,sh_alcohol_maxdrnks_cont,,,,,"During the past 30 days, what is the largest number of drinks you had on any occasion?"
+marijan1,num,,34,302612,Social Habits,sh,marijuana,cont,sh_marijuana_marijan1_cont,,,,,"During the past 30 days, on how many days did you use marijuana or cannabis?"
+rsnmrjn2,num,,6,425290,Social Habits,sh,marijuana,cat,sh_marijuana_rsnmrjn2_cat,,,,,"When you used marijuana or cannabis during the past 30 days, was it usually:"
+_cureci1,num,,3,23938,Social Habits,sh,smoking,cat,sh_smoking__cureci1_cat,,,,,Adults who are current e-cigarette users
+ecignow1,num,,7,23938,Social Habits,sh,smoking,cat,sh_smoking_ecignow1_cat,1,,,,"Do you now use e-cigarettes or other electronic vaping products every day, some days, or not at all?"
+_smoker3,num,,5,24970,Social Habits,sh,smoking,cat,sh_smoking__smoker3_cat,,,,,"Four-level smoker status: Everyday smoker, Someday smoker, Former smoker, Non-smoker"
+smoke100,num,,5,24461,Social Habits,sh,smoking,bin,sh_smoking_smoke100_bin,1,,SH,sh_cigarettes_100perlife_bin,Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]
+lastsmk2,num,,11,387374,Social Habits,sh,smoking,cat,sh_smoking_lastsmk2_cat,,,,,": How long has it been since you last smoked a cigarette, even one or two puffs?"
+lcsfirst,num,,60,426860,Social Habits,sh,smoking,cont,sh_smoking_lcsfirst_cont,,,,,How old were you when you first started to smoke cigarettes regularly
+lcslast,num,,93,427257,Social Habits,sh,smoking,cont,sh_smoking_lcslast_cont,,,,,How old were you when you last smoked cigarettes regularly?
+lcsnumcg,num,,65,427037,Social Habits,sh,smoking,cont,sh_smoking_lcsnumcg_cont,,,,,"On average, when you smoke/smoked regularly, about how many cigarettes do/did you usually smoke each day?"
+smokday2,num,,6,271614,Social Habits,sh,smoking,cat,sh_smoking_smokday2_cat,,,,,"Do you now smoke cigarettes every day, some days, or not at all?"
+_rfsmok3,num,,3,24970,Social Habits,sh,smoking,bin,sh_smoking__rfsmok3_bin,,,SH,sh_smoking_current_bin,Adults who are current smokers
+stopsmk2,num,,5,414746,Social Habits,sh,smoking,bin,sh_smoking_stopsmk2_bin,,,,,"During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?"
+usenow3,num,,6,22882,Social Habits,sh,smoking,cat,sh_smoking_usenow3_cat,1,1,,,Use of Smokeless Tobacco Products
+cageg,num,,5,390113,Social Status,ss,childage,cat,ss_childage_cageg_cat,,,,,Four level child age
+medcost1,num,,5,1364,Social Status,ss,cost,bin,ss_cost_medcost1_bin,1,,,,Was there a time in the past 12 months when you needed to see a doctor but could not because you could not afford it?
+_educag,num,,5,2478,Social Status,ss,education,cat,ss_education__educag_cat,1,1,,,Level of education completed
+educa,num,,8,2478,Social Status,ss,education,cat,ss_education_educa_cat,,,EDU,ss_education_level_cat,What is the highest grade or year of school you completed?
+employ1,num,,10,8251,Social Status,ss,employment,cat,ss_employment_employ1_cat,1,1,Employment,ss_employment_na_cat,Are you currently Employed?
+workcfs,num,,1,438693,Social Status,ss,employment,cat,ss_employment_workcfs_cat,,,,,"Thinking about your CFS or ME, during the past 6 months, how many hours a week on average have you been able to work at a job or business for pay?"
+firearm5,num,,5,411227,Social Status,ss,firearms,bin,ss_firearms_firearm5_bin,,,,,Are any firearms now kept in or around your home?
+gunload,num,,5,426935,Social Status,ss,firearms,bin,ss_firearms_gunload_bin,,,,,Are any of these firearms now loaded?
+loadulk2,num,,5,434423,Social Status,ss,firearms,bin,ss_firearms_loadulk2_bin,,,,,Are any of these loaded firearms also unlocked? 
+_hcvu652,num,,3,72820,Social Status,ss,healthinsurance,cat,ss_healthinsurance__hcvu652_cat,,,SS,ss_healthinsurance_na_cat,Respondents aged 18-64 who have any form of health insurance
+_hlthpln,num,,3,7397,Social Status,ss,healthinsurance,bin,ss_healthinsurance__hlthpln_bin,1,,,,Adults who had some form of health insurance
+priminsr,num,,14,17397,Social Status,ss,healthinsurance,cat,ss_healthinsurance_priminsr_cat,,,,,What is the current primary source of your health insurance?
+_incomg1,num,,8,9443,Social Status,ss,income,cat,ss_income__incomg1_cat,1,,,,Income categories
+income3,num,,14,94413,Social Status,ss,income,cat,ss_income_income3_cat,,,Income,ss_income_na_cat,"Is your annual household income from all sources: (If respondent refuses at any income level, code  ÌRefused. Ì)"
+cstate1,num,,3,117786,Social Status,ss,residence,cat,ss_residence_cstate1_cat,,,,,Do you live in a private residence?
+renthom1,num,,6,4599,Social Status,ss,residence,cat,ss_residence_renthom1_cat,1,,,,Do you own or rent your home?
+veteran3,num,,5,3217,Social Status,ss,veteran,bin,ss_veteran_veteran3_bin,1,,SS,ss_veteran_na_bin,"Have you ever served on active duty in the United States Armed Forces, either in the regular military or in a National Guard or military reserve unit?"
+flushot7,num,,5,31392,Vaccine,vac,flu,bin,vac_flu_flushot7_bin,1,,Vaccine,vac_flu_na_bin,"During the past 12 months, have you had either flu vaccine that was sprayed in your nose or flu shot injected into your arm?"
+_flshot7,num,,4,36342,Vaccine,vac,flu,bin,vac_flu__flshot7_bin,,,,,Adults aged 65+ who have had a flu shot within the past year
+flshtmy3,num,,34,244261,Vaccine,vac,flu,cont,vac_flu_flshtmy3_cont,,,,,During what month and year did you receive your most recent flu vaccine that was sprayed in your nose or flu shot injected into your arm?
+hpvadvc4,num,,6,427076,Vaccine,vac,hpv,bin,vac_hpv_hpvadvc4_bin,,,Vaccine,vac_hpv_na_bin,Have you ever had an H.P.V. vaccination?
+imfvpla2,num,,15,231755,Vaccine,vac,flu,cat,vac_flu_imfvpla2_cat,,,,,At what kind of place did you get your last flu shot or vaccine?
+hpvadsht,num,,6,436757,Vaccine,vac,hpv,cat,vac_hpv_hpvadsht_cat,,,,,How many HPV shots did you receive?
+_pneumo3,num,,4,299269,Vaccine,vac,bmi,bin,vac_bmi__pneumo3_bin,,,Vaccine,vac_pneumonia_65plus_bin,Adults aged 65+ who have ever had a pneumonia vaccination
+pneuvac4,num,,5,62801,Vaccine,vac,pneumonia,bin,vac_pneumonia_pneuvac4_bin,1,1,Vaccine,vac_pneumonia_everhadshot_bin,Have you ever had a pneumonia shot also known as a pneumococcal vaccine?
+shingle2,num,,5,425454,vaccine,vac,shingleszoster,bin,vac_shingleszoster_shingle2_bin,,,,,Have you ever had the shingles or zoster vaccine?
+tetanus1,num,,7,425378,Vaccine,vac,tetanus,cat,vac_tetanus_tetanus1_cat,,,,,Received Tetanus Shot Since 2005?
