@@ -4,3 +4,4 @@ seaborn
 streamlit
 pickle5
 sqlalchemy
+psycopg2
