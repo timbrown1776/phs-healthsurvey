@@ -4,8 +4,3 @@ seaborn
 streamlit
 pickle5
 sqlalchemy
-pathlib
-os
-constants_chd
-pickle
-random

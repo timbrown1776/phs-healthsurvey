@@ -3,12 +3,11 @@ import streamlit as st
 import random
 import pickle
 import pandas as pd
-import constants_chd
-import os
-from pathlib import Path
+# import constants_chd
+# import os
+# from pathlib import Path
 # import psycopg2
 from sqlalchemy import create_engine
-
 
 class CHD:
     def __init__(self):
