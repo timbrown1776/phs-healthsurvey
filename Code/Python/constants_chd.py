@@ -1,7 +1,7 @@
 title = "Coronary Heart Disease Prediction and Exploration"
 tableaulink = "Check out tableau report for secondary attribute exploration at this link [link]("     "https://public.tableau.com/app/profile/monika.maingi/viz/CSE6242Team134HeartDiseaseDetectionandExplorationProjectDataVisualization_1669696627000/Demographics?publish=yes)"
 model_path='https://phs-timbrown.s3.amazonaws.com/model_chd_prediction.sav'
-logo='heart.jpg'
+logo='python/heart.jpg'
 model_sql='select * from model_chd_top10'
 data_path='https://phs-timbrown.s3.amazonaws.com/CHDPositiveData.csv'
 

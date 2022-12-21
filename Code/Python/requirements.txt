@@ -4,3 +4,4 @@ seaborn
 streamlit
 pickle5
 ndg-httpsclient
+urllib3
