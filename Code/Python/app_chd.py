@@ -6,8 +6,8 @@ import pandas as pd
 import constants_chd
 # import os
 # from pathlib import Path
-import psycopg2
-from sqlalchemy import create_engine
+# import psycopg2
+# from sqlalchemy import create_engine
 
 class CHD:
     def __init__(self):
@@ -25,6 +25,8 @@ class CHD:
         self.model_path = constants_chd.model_path
         self.logo = constants_chd.logo       
         self.model_sql = constants_chd.model_sql
+        self.data_path = constants_chd.data_path
+        
         self.df = self.load_data()
         self.model = self.load_model()
         model_cols = self.model.feature_names_in_
@@ -32,27 +34,28 @@ class CHD:
 
 #     @st.cache
 
-    def sql_connect(self):
-        host=self.sql_connect_params['host']
-        port=self.sql_connect_params['port']
-        db=self.sql_connect_params['db']
-        schema=self.sql_connect_params['schema']
-        user=self.sql_connect_params['user']
-        pswd=self.sql_connect_params['pswd']
-        conn_string = 'postgresql+psycopg2://'+user+':'+pswd+'@'+host+':'+port+'/'+db
+#     def sql_connect(self):
+#         host=self.sql_connect_params['host']
+#         port=self.sql_connect_params['port']
+#         db=self.sql_connect_params['db']
+#         schema=self.sql_connect_params['schema']
+#         user=self.sql_connect_params['user']
+#         pswd=self.sql_connect_params['pswd']
+#         conn_string = 'postgresql+psycopg2://'+user+':'+pswd+'@'+host+':'+port+'/'+db
 
-        eng = create_engine(conn_string)
-        conn = eng.connect()  
+#         eng = create_engine(conn_string)
+#         conn = eng.connect()  
 
-        # Set the Schema
-        query = 'SET search_path TO \"'+schema+'\"'
-        rs=conn.execute(query)
-        return conn
+#         # Set the Schema
+#         query = 'SET search_path TO \"'+schema+'\"'
+#         rs=conn.execute(query)
+#         return conn
         
     def load_data(self):
-        conn=self.sql_connect()
-        df = pd.read_sql(self.model_sql, conn)
+#         conn=self.sql_connect()
+#         df = pd.read_sql(self.model_sql, conn)
 #         print(list(df.columns))
+        df = pd.read_csv(self.data_path)
         return df
     
     def load_model(self):

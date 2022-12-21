@@ -3,6 +3,7 @@ tableaulink = "Check out tableau report for secondary attribute exploration at t
 model_path='model/model_chd_prediction.sav'
 logo='heart.jpg'
 model_sql='select * from model_chd_top10'
+data_path='https://phs-timbrown.s3.amazonaws.com/CHDPositiveData.csv'
 
 questions = ['What is your Age?',
             'What is your Sex?',
