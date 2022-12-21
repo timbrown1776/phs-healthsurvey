@@ -1,9 +1,13 @@
 title = "Coronary Heart Disease Prediction and Exploration"
 tableaulink = "Check out tableau report for secondary attribute exploration at this link [link]("     "https://public.tableau.com/app/profile/monika.maingi/viz/CSE6242Team134HeartDiseaseDetectionandExplorationProjectDataVisualization_1669696627000/Demographics?publish=yes)"
-model_path='https://phs-timbrown.s3.amazonaws.com/model_chd_prediction.sav'
-logo='Code/Python/heart.jpg'
+
+mode='local' #local or cloud
+cloud_path='Code/Python/'
+s3url='https://phs-timbrown.s3.amazonaws.com/'
+model_file='model_chd_prediction.sav'
+logo_file='heart.jpg'
 model_sql='select * from model_chd_top10'
-data_path='https://phs-timbrown.s3.amazonaws.com/CHDPositiveData.csv'
+data_file='CHDPositiveData.csv'
 
 questions = ['What is your Age?',
             'What is your Sex?',
@@ -107,8 +111,10 @@ visual_dict = {
                        0:'No'}
 }
 
-model_pred_columns=['dem_age__age_g_cat' ,'dem_sex__sex_cat','gh_careprovider_persdoc3_bin','gh_healthstatus__rfhlth_cat', 'hc_cvd__rfhype6_bin','hc_cvd_cholchk3_cat', 'sh_smoking_usenow3_cat', 'ss_education__educag_cat','ss_employment_employ1_cat', 'vac_pneumonia_pneuvac4_bin']
-
+model_pred_columns=['dem_age__age_g_cat', 'dem_sex__sex_cat', 'gh_healthstatus__rfhlth_cat',
+ 'gh_careprovider_persdoc3_bin', 'hc_cvd__rfhype6_bin',
+ 'hc_cvd_cholchk3_cat', 'sh_smoking_usenow3_cat' ,'ss_education__educag_cat',
+ 'ss_employment_employ1_cat', 'vac_pneumonia_pneuvac4_bin']
 model_resp_column = 'hc_chd__michd_cat'
 
 chart_name_dict = {

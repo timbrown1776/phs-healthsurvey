@@ -4,8 +4,6 @@ import random
 import pickle
 import pandas as pd
 import constants_chd
-from urllib.request import urlopen
-
 # import os
 # from pathlib import Path
 # import psycopg2
@@ -13,6 +11,21 @@ from urllib.request import urlopen
 
 class CHD:
     def __init__(self):
+        self.mode = constants_chd.mode
+        self.cloud_path = constants_chd.cloud_path
+        self.data_file = constants_chd.data_file
+        self.model_file = constants_chd.model_file
+        self.s3url = constants_chd.s3url
+        self.logo_file = constants_chd.logo_file
+        
+        self.data_path = constants_chd.s3url + self.data_file
+        if self.mode == 'cloud':
+            self.logo_path = self.cloud_path + self.logo_file
+            self.model_path = self.cloud_path + self.model_file
+        else: # local
+            self.logo_path = self.logo_file
+            self.model_path = self.model_file
+            
         self.questions = constants_chd.questions
         self.question_responses = constants_chd.question_responses
         
@@ -23,12 +36,8 @@ class CHD:
         self.tableaulink = constants_chd.tableaulink
         
         self.sql_connect_params = constants_chd.sql_connect_params
-        
-        self.model_path = constants_chd.model_path
-        self.logo = constants_chd.logo       
         self.model_sql = constants_chd.model_sql
-        self.data_path = constants_chd.data_path
-        print(self.data_path)
+        
         self.df = self.load_data()
         self.model = self.load_model()
         model_cols = self.model.feature_names_in_
@@ -61,12 +70,11 @@ class CHD:
         return df
     
     def load_model(self):
-        loaded_model = pickle.load(urlopen("https://phs-timbrown.s3.amazonaws.com/model_chd_prediction.sav"))
-#         loaded_model = pickle.load(open(self.model_path, 'rb'))
+#         loaded_model = pickle.load(urlopen("https://phs-timbrown.s3.amazonaws.com/model_chd_prediction.sav"))
+        loaded_model = pickle.load(open(self.model_path, 'rb'))
         return loaded_model
 
     def call_predict(self, df):
-        print(list(df.columns))
         res = self.model.predict_proba(df) # Probability of NOT getting CHD
         prob_CHD = 1-res
         original_title = f'<h3 style="color:Grey; font-size: 20px;">The probability of Coronary Heart Disease is:  <span style=color:Blue>{round(prob_CHD[0][0]*100, 1)}%</span> </h3>'
@@ -111,7 +119,7 @@ class CHD:
 
     def set_title_header(self):
         c1, c2 = st.columns([1, 5])
-        c1.image(self.logo)
+        c1.image(self.logo_path)
         c2.header(self.title)
         st.write(self.tableaulink)
         st.markdown("""---""")
