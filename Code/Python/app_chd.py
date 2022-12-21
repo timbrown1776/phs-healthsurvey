@@ -4,6 +4,8 @@ import random
 import pickle
 import pandas as pd
 import constants_chd
+from urllib.request import urlopen
+
 # import os
 # from pathlib import Path
 # import psycopg2
@@ -59,7 +61,7 @@ class CHD:
         return df
     
     def load_model(self):
-        loaded_model = pickle.load(urllib.request.urlopen("https://phs-timbrown.s3.amazonaws.com/model_chd_prediction.sav"))
+        loaded_model = pickle.load(urlopen("https://phs-timbrown.s3.amazonaws.com/model_chd_prediction.sav"))
 #         loaded_model = pickle.load(open(self.model_path, 'rb'))
         return loaded_model
 
