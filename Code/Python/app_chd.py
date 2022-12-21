@@ -26,7 +26,7 @@ class CHD:
         self.logo = constants_chd.logo       
         self.model_sql = constants_chd.model_sql
         self.data_path = constants_chd.data_path
-        
+        print(self.data_path)
         self.df = self.load_data()
         self.model = self.load_model()
         model_cols = self.model.feature_names_in_
