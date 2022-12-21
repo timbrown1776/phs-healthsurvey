@@ -66,6 +66,7 @@ class CHD:
         return loaded_model
 
     def call_predict(self, df):
+        print(list(df.columns))
         res = self.model.predict_proba(df) # Probability of NOT getting CHD
         prob_CHD = 1-res
         original_title = f'<h3 style="color:Grey; font-size: 20px;">The probability of Coronary Heart Disease is:  <span style=color:Blue>{round(prob_CHD[0][0]*100, 1)}%</span> </h3>'
