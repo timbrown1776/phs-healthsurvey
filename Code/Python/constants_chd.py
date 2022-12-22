@@ -129,13 +129,16 @@ chart_name_dict = {
     'ss_employment_employ1_cat' : 'Employment',
     'vac_pneumonia_pneuvac4_bin' : 'Pneumonia Vaccine'
 }
-        
+
 sql_connect_params  = {
-    'host' : 'localhost',
-    'port' : '5433',
+    'hostcloud' : 'healthdb.cpzblo2jvmxu.us-east-1.rds.amazonaws.com',
+    'hostlocal' : 'localhost',
+    'portcloud' : '5432',
+    'portlocal' : '5433',
     'db' : 'HealthDB',
     'user' : 'postgres',
     'pswd' : 'Scootmo24!',
     'schema': 'HealthSurvey'
 }
+
 

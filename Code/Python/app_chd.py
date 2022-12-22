@@ -7,7 +7,7 @@ import constants_chd
 # import os
 # from pathlib import Path
 # import psycopg2
-# from sqlalchemy import create_engine
+from sqlalchemy import create_engine
 
 class CHD:
     def __init__(self):
@@ -45,28 +45,33 @@ class CHD:
 
 #     @st.cache
 
-#     def sql_connect(self):
-#         host=self.sql_connect_params['host']
-#         port=self.sql_connect_params['port']
-#         db=self.sql_connect_params['db']
-#         schema=self.sql_connect_params['schema']
-#         user=self.sql_connect_params['user']
-#         pswd=self.sql_connect_params['pswd']
-#         conn_string = 'postgresql+psycopg2://'+user+':'+pswd+'@'+host+':'+port+'/'+db
+    def sql_connect(self):
+        if self.mode == 'cloud':
+            host=self.sql_connect_params['hostcloud']
+            port=self.sql_connect_params['portcloud']
+        else: # local
+            host=self.sql_connect_params['hostlocal']
+            port=self.sql_connect_params['portlocal']
 
-#         eng = create_engine(conn_string)
-#         conn = eng.connect()  
+        db=self.sql_connect_params['db']
+        schema=self.sql_connect_params['schema']
+        user=self.sql_connect_params['user']
+        pswd=self.sql_connect_params['pswd']
+        conn_string = 'postgresql+psycopg2://'+user+':'+pswd+'@'+host+':'+port+'/'+db
 
-#         # Set the Schema
-#         query = 'SET search_path TO \"'+schema+'\"'
-#         rs=conn.execute(query)
-#         return conn
+        eng = create_engine(conn_string)
+        conn = eng.connect()  
+
+        # Set the Schema
+        query = 'SET search_path TO \"'+schema+'\"'
+        rs=conn.execute(query)
+        return conn
         
     def load_data(self):
-#         conn=self.sql_connect()
-#         df = pd.read_sql(self.model_sql, conn)
-#         print(list(df.columns))
-        df = pd.read_csv(self.data_path)
+        conn=self.sql_connect()
+        df = pd.read_sql(self.model_sql, conn)
+        print(list(df.columns))
+#         df = pd.read_csv(self.data_path)
         return df
     
     def load_model(self):
