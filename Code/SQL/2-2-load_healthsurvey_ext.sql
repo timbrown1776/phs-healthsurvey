@@ -163,7 +163,12 @@ when _fruite1 = 1 then null
 when _fruite1 = 2 then null
 end as _fruite1,
 case 
-when _frutsu1 >= 0 then _frutsu1
+when _frutsu1 = 0 then 'None'
+when _frutsu1 >= 1 and _frutsu1 <= 10 then '1-10'
+when _frutsu1 >= 11 and _frutsu1 <= 20 then '11-20'
+when _frutsu1 >= 21 and _frutsu1 <= 50 then '21-50'
+when _frutsu1 >= 51 and _frutsu1 <= 100 then '51-100'
+when _frutsu1 >= 101 then '100+'
 end as _frutsu1,
 case 
 when _hcvu652 = 1 then 1
@@ -451,8 +456,12 @@ when _veg23a = 0 then _veg23a
 when _veg23a = 1 then _veg23a
 end as _veg23a,
 case 
-when _vegesu1 >= 0 then _vegesu1
-when _vegesu1 = null then null
+when _vegesu1 = 0 then 'None'
+when _vegesu1 >= 1 and _vegesu1 <= 10 then '1-10'
+when _vegesu1 >= 11 and _vegesu1 <= 20 then '11-20'
+when _vegesu1 >= 21 and _vegesu1 <= 50 then '21-50'
+when _vegesu1 >= 51 and _vegesu1 <= 100 then '51-100'
+when _vegesu1 >= 101 then '100+'
 end as _vegesu1,
 case 
 when _vegete1 = 0 then null
@@ -1341,7 +1350,12 @@ when frenchf1 < 555 then frenchf1
 when frenchf1 = 555 then 0
 end as frenchf1,
 case 
-when frnchda_ >= 0 then frnchda_
+when frnchda_ = 0 then 'None'
+when frnchda_ >= 1 and frnchda_ <= 10 then '1-10'
+when frnchda_ >= 11 and frnchda_ <= 20 then '11-20'
+when frnchda_ >= 21 and frnchda_ <= 50 then '21-50'
+when frnchda_ >= 51 and frnchda_ <= 100 then '51-100'
+when frnchda_ >= 101 then '100+'
 end as frnchda_,
 case 
 when fruit2 < 555 then fruit2
@@ -1355,7 +1369,12 @@ case
 when frutda2_ >= 0 then frutda2_
 end as frutda2_,
 case 
-when ftjuda2_ >= 0 then ftjuda2_
+when ftjuda2_ = 0 then 'None'
+when ftjuda2_ >= 1 and ftjuda2_ <= 10 then '1-10'
+when ftjuda2_ >= 11 and ftjuda2_ <= 20 then '11-20'
+when ftjuda2_ >= 21 and ftjuda2_ <= 50 then '21-50'
+when ftjuda2_ >= 51 and ftjuda2_ <= 100 then '51-100'
+when ftjuda2_ >= 101 then '100+'
 end as ftjuda2_,
 case 
 when fvgreen1 < 555 then fvgreen1
@@ -1372,7 +1391,12 @@ when genhlth = 9 then null
 when genhlth = null then null
 end as genhlth,
 case 
-when grenda1_ >= 0 then grenda1_
+when grenda1_ = 0 then 'None'
+when grenda1_ >= 1 and grenda1_ <= 10 then '1-10'
+when grenda1_ >= 11 and grenda1_ <= 20 then '11-20'
+when grenda1_ >= 21 and grenda1_ <= 50 then '21-50'
+when grenda1_ >= 51 and grenda1_ <= 100 then '51-100'
+when grenda1_ >= 101 then '100+'
 end as grenda1_,
 case 
 when gunload = 1 then 1
@@ -1756,7 +1780,12 @@ case
 when poorhlth < 77 then poorhlth
 end as poorhlth,
 case 
-when potada1_ >= 0 then potada1_
+when potada1_ = 0 then 'None'
+when potada1_ >= 1 and potada1_ <= 10 then '1-10'
+when potada1_ >= 11 and potada1_ <= 20 then '11-20'
+when potada1_ >= 21 and potada1_ <= 50 then '21-50'
+when potada1_ >= 51 and potada1_ <= 100 then '51-100'
+when potada1_ >= 101 then '100+'
 end as potada1_,
 case 
 when potatoe1 < 555 then potatoe1
@@ -2062,7 +2091,12 @@ when vclntes1 = 9 then null
 when vclntes1 = null then null
 end as vclntes1,
 case 
-when vegeda2_ >= 0 then vegeda2_
+when vegeda2_ = 0 then 'None'
+when vegeda2_ >= 1 and vegeda2_ <= 10 then '1-10'
+when vegeda2_ >= 11 and vegeda2_ <= 20 then '11-20'
+when vegeda2_ >= 21 and vegeda2_ <= 50 then '21-50'
+when vegeda2_ >= 51 and vegeda2_ <= 100 then '51-100'
+when vegeda2_ >= 101 then '100+'
 end as vegeda2_,
 case 
 when vegetab2 < 555 then vegetab2

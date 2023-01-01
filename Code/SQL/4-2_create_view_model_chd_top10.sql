@@ -12,12 +12,8 @@ sh_smoking_usenow3_cat,
 ss_education__educag_cat,
 ss_employment_employ1_cat,
 vac_pneumonia_pneuvac4_bin,
-hc_chd__michd_cat
+hc_chd__michd_bin
 from healthsurvey_cat h ;
 
 select * from model_chd_top10;
-
-select * from model_chd;
-
-select dem_age__age_g_cat ,hc_chd__michd_cat  from healthsurvey_cat;
 

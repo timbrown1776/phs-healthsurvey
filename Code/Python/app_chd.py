@@ -68,10 +68,10 @@ class CHD:
         return conn
         
     def load_data(self):
-        conn=self.sql_connect()
-        df = pd.read_sql(self.model_sql, conn)
-        print(list(df.columns))
-#         df = pd.read_csv(self.data_path)
+#         conn=self.sql_connect()
+#         df = pd.read_sql(self.model_sql, conn)
+#         print(list(df.columns))
+        df = pd.read_csv(self.data_path)
         return df
     
     def load_model(self):

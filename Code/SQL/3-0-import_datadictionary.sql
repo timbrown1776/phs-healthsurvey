@@ -13,8 +13,7 @@ CREATE TABLE datadictionary (
 	cat_column_name text null,
 	model_learn int null,
 	model_top10 int null,
-	visual_component text null,
-	visual_old_name text null,
+	visual text null,
 	survey_question text null
 );
 
