@@ -1,5 +1,7 @@
 title = "Coronary Heart Disease Prediction and Exploration"
-tableaulink = "Check out tableau report for secondary attribute exploration at this link [link]("     "https://public.tableau.com/app/profile/tim.brown5303/viz/CoronaryHeartDiseaseExploration/Overview"
+tableaulink = "Check out tableau report for secondary attribute exploration at this link [link]("     "https://public.tableau.com/app/profile/tim.brown5303/viz/CoronaryHeartDiseaseExploration/Overview)"
+
+# tableaulink = "Check out tableau report for secondary attribute exploration at this link [link]("     "https://public.tableau.com/app/profile/tim.brown5303/viz/CoronaryHeartDiseaseDetectionandExploration/Social?publish=yes)"
 
 mode='cloud' #local or cloud
 cloud_path='Code/Python/'
